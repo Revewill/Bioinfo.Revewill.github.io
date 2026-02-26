@@ -19,12 +19,12 @@
  *Example: trained HMM parameters, neural network weights.*
 ---
 ## 2. Self-Learning Plan for This Semester
-### 2.1 Foundational Skills (Weeks 1-4)
+### 2.1 Foundational Skills
 * **Linux:** Review and practice regularly.
 * **Markdown & GitHub:** Learn to take notes in Markdown, publish via GitHub Pages, implement version control and backups.
-* **References:** Read *Quick R* and/or *Bioinformatics* (101 Textbook).
+* **References:** Read *Quick R* and/or *Bioinformatics* (101 Textbook) for 'R' learning and bioinformatic practices.
 ### 2.2 Project & Sharing
 * **Peer Learning:** Participate in group learning, collaborate with classmates on a small project (e.g., reproducing a bioinformatics paper analysis).
 ### 2.3 Habits & Backup
 * **Daily Log:** Update **learning progress** on GitHub, use Issues to document questions.
-* **Regular Backup:** Sync local code with Git, and use GitHub to **back up** important files.
+* **Regular Backup:** Sync local code with 'Git', and use GitHub to **back up** important files.
