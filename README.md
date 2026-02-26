@@ -1,7 +1,7 @@
 # Bioinformatics Course Notes - First Lecture
 ## 1 Lecture Notes: Big Data-Driven Bioinformatics
 ### 1.1 Core Framework: 4 Steps
-* **Question:** Start with a biological question (e.g., how does a certain gene change in cancer?)
+* **Question:** Start with a biological question (*e.g.*, how does a certain gene change in cancer?)
 * **Information:** Acquire **high-throughput** sequencing data (RNA-seq, ChIP-seq, etc.); large public databases provide vast information.
 * **Analysis:** Data cleaning, feature extraction, applying statistical and machine learning methods.
 * **Modeling:** Build **models** to interpret data and make predictions (*e.g.*, gene function prediction).
@@ -22,7 +22,7 @@
 ### 2.1 Foundational Skills (Weeks 1-4)
 * **Linux:** Review and practice regularly.
 * **Markdown & GitHub:** Learn to take notes in Markdown, publish via GitHub Pages, implement version control and backups.
-* **References:** Read *Quick R* and/or *Bioinformatics* (101).
+* **References:** Read *Quick R* and/or *Bioinformatics* (101 Textbook).
 ### 2.2 Project & Sharing
 * **Peer Learning:** Participate in group learning, collaborate with classmates on a small project (e.g., reproducing a bioinformatics paper analysis).
 ### 2.3 Habits & Backup
