@@ -3,7 +3,7 @@
 ```bash
 #!/bin/bash
 
-echo "This script reads a typed directory and sorts the files/subdirectories in it."
+echo "This script reads a typed directory and sorts the files/directories in it."
 
 while true; do
     read -t 60 -p "Enter your directory here: ~/linux/Bash/" dir 
