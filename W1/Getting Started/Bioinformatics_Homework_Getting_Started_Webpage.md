@@ -14,9 +14,9 @@
 * **Transformer:** **Protein** structure prediction and LLMs.
 ### 1.4 Algorithm vs Model
 * **Algorithm:** A set of **concrete steps or methods** to solve a problem; it is a general **computational** process.
- *Example: DP algorithm, gradient descent algorithm.*
+ > *Example: DP algorithm, gradient descent algorithm.*
 * **Model:** A parametric representation **learned** from data; it is the result of **applying** an algorithm to specific data.
- *Example: trained HMM parameters, neural network weights.*
+ > *Example: trained HMM parameters, neural network weights.*
 ---
 ## 2. Self-Learning Plan for This Semester
 ### 2.1 Foundational Skills
