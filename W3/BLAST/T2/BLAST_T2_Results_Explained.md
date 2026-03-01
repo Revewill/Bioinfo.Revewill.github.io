@@ -215,7 +215,7 @@ while true; do
                 numline=$(sed -n "${num}p" "${tempfile}")
 
                 # Acquire permission
-		while true; do
+				while true; do
                 	echo -e "Is this your file?\n${numline}"
                 	read -t 60 -p "(y/n): " answeryn
 
@@ -227,7 +227,7 @@ while true; do
                     		# Randomly shuffle sequence
                     		echo "Beginning shuffling now."
                     		originalseq=$(cat "${filepath}")
-		    		>"${fulldirpath}"/shufseq.fa
+		    				>"${fulldirpath}"/shufseq.fa
 
                     		for i in {1..10}; do
                         		shufseq=$(echo ${originalseq} | fold -w1 | shuf | tr -d '\n')
@@ -265,8 +265,8 @@ while true; do
                         		blastp -query "${fulldirpath}"/queryseq.fasta -db "${fulldirpath}"/database_blast -outfmt 6 -evalue 10000000 -num_threads 2 -max_hsps 1 -threshold 100 -word_size 2 >> "${fulldirpath}"/BLAST_results
                         		echo "" >> "${fulldirpath}"/BLAST_results
 
-					# Remove database
-					rm "${fulldirpath}"/database_blast.*
+								# Remove database
+								rm "${fulldirpath}"/database_blast.*
 
                     		done
 
@@ -360,12 +360,14 @@ while true; do
             
                 	fi
 
-		done
+				done
 
                 break
+
             else
                 echo "Invalid number. Type again please."
                 continue
+				
             fi
 
             rm "${tempfile}"

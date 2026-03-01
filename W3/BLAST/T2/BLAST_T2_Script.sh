@@ -173,9 +173,11 @@ while true; do
 				done
 
                 break
+
             else
                 echo "Invalid number. Type again please."
                 continue
+				
             fi
 
             rm "${tempfile}"
