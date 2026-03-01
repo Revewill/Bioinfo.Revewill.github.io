@@ -1,6 +1,6 @@
 # Explanation on BLAST (T2) results
 > [Click here](https://revewill.github.io/Bioinfo.Revewill.github.io/W3/BLAST/T2/BLAST_T2_Results.txt) for *final results*;
-> [Click here](https://revewill.github.io/Bioinfo.Revewill.github.io/W3/BLAST/T2/BLAST_T2_Script.txt) for *original script*.
+> [Click here](https://revewill.github.io/Bioinfo.Revewill.github.io/W3/BLAST/T2/BLAST_T2_Script.sh) for *original script*.
 
 ## 1. Format for *final results*
 * *Abbr.* meanings:
