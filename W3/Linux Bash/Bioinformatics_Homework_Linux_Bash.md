@@ -48,7 +48,7 @@ while true; do
 done
 ```
 
-### 2. [filenames.txt](https://revewill.github.io/Bioinfo.Revewill.github.io/W3/Linux Bash/filenames.txt)
+### 2. [filenames.txt](https://revewill.github.io/Bioinfo.Revewill.github.io/W3/Linux%20Bash/filenames.txt)
 a1.txt
 a.txt
 b1.txt
@@ -77,7 +77,7 @@ test.sh
 test.txt
 wigToBigWig
 
-### 3. [dirname.txt](https://revewill.github.io/Bioinfo.Revewill.github.io/W3/Linux Bash/dirname.txt)
+### 3. [dirname.txt](https://revewill.github.io/Bioinfo.Revewill.github.io/W3/Linux%20Bash/dirname.txt)
 a-docker
 app
 backup
@@ -116,4 +116,3 @@ tmp
 tmp_script
 var
 x-rbp
-
