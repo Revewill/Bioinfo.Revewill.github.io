@@ -25,130 +25,148 @@ while true; do
                 numline=$(sed -n "${num}p" "${tempfile}")
 
                 # Acquire permission
-                echo -e "Is this your file?\n${numline}"
-                read -t 60 -p "(y/n): " answeryn
+		while true; do
+                	echo -e "Is this your file?\n${numline}"
+                	read -t 60 -p "(y/n): " answeryn
 
-                if [[ ${answeryn,,} == "y" ]]; then
-                    echo "Beginning analysis now."
-                    filename=$(echo "${numline}" | awk '{$1=""; print substr($0,2)}')
-                    filepath="${fulldirpath}/${filename}"
+                	if [[ ${answeryn,,} == "y" ]]; then
+                   		echo "Beginning analysis now."
+                    		filename=$(echo "${numline}" | awk '{$1=""; print substr($0,2)}')
+                    		filepath="${fulldirpath}/${filename}"
                     
-                    # Randomly shuffle sequence
-                    echo "Beginning shuffling now."
-                    originalseq=$(cat "${filepath}")
+                    		# Randomly shuffle sequence
+                    		echo "Beginning shuffling now."
+                    		originalseq=$(cat "${filepath}")
+		    		>"${fulldirpath}"/shufseq.fa
 
-                    for i in {1..10}; do
-                        shufseq=$(echo ${originalseq} | fold -w1 | shuf | tr -d '\n')
+                    		for i in {1..10}; do
+                        		shufseq=$(echo ${originalseq} | fold -w1 | shuf | tr -d '\n')
 
-                        > "${fulldirpath}/shufseq.fa"
-                        echo ">shuffled_seq_$i" >> "${fulldirpath}"/shufseq.fa
-                        echo "${shufseq}" >> "${fulldirpath}"/shufseq.fa
+                        		echo ">shuffled_seq_$i" >> "${fulldirpath}"/shufseq.fa
+                        		echo "${shufseq}" >> "${fulldirpath}"/shufseq.fa
 
-                    done
+                    		done
 
-                    shufseqfile="${fulldirpath}/shufseq.fa"
+                    		shufseqfile="${fulldirpath}/shufseq.fa"
                     
-                    # Cat shufseq.fa
-                    echo -e "These are shuffled sequences in fa format (stored as ${shufseqfile})."
-                    cat "${shufseqfile}"
+                    		# Cat shufseq.fa
+                    		echo -e "These are shuffled sequences in fa format (stored as ${shufseqfile})."
+                    		cat "${shufseqfile}"
 
-                    cp "${shufseqfile}" "${fulldirpath}"/nonquery_shufseq.fa
-                    nonquery_shufseqfile="${fulldirpath}/nonquery_shufseq.fa"
+                    		cp "${shufseqfile}" "${fulldirpath}"/nonquery_shufseq.fa
+                    		nonquery_shufseqfile="${fulldirpath}/nonquery_shufseq.fa"
 
-                    # Start BLAST
-                    echo "Beginning BLAST now."
-                    > "${fulldirpath}"/BLAST_results
+                    		# Start BLAST
+                    		echo "Beginning BLAST now."
+                    		> "${fulldirpath}"/BLAST_results
 
-                    for i in {1..10}; do
+                    		for i in {1..10}; do
                         
-                        # Extract and save query sequence
-                        grep -A1 "^>shuffled_seq_$i$" "${shufseqfile}" | tail -1 > "${fulldirpath}"/queryseq.fasta
+                        		# Extract and save query sequence
+                        		grep -A1 "^>shuffled_seq_$i$" "${shufseqfile}" > "${fulldirpath}"/queryseq.fasta
 
-                        # Exclude query sequence from shufseq.fa
-                        grep -v -A1 "^>shuffled_seq_$i$" "${nonquery_shufseqfile}" > "${fulldirpath}"/temp_db.fa
+                        		# Exclude query sequence from shufseq.fa
+                        		sed "/^>shuffled_seq_$i$/,+1d" "${shufseqfile}" > "${nonquery_shufseqfile}"
 
-                        # Make BLAST database
-                        makeblastdb -dbtype prot -in "${fulldirpath}/temp_db.fa" -out "${fulldirpath}"/database_blast
+                        		# Make BLAST database
+                        		makeblastdb -dbtype prot -in "${nonquery_shufseqfile}" -out "${fulldirpath}"/database_blast
 
-                        # Start anlignment
-                        blastp -query "${fulldirpath}"/queryseq.fasta -db "${fulldirpath}"/database_blast -outfmt 6 >> "${fulldirpath}"/BLAST_results
-                        echo "" >> "${fulldirpath}"/BLAST_results
+                        		# Start anlignment
+                        		blastp -query "${fulldirpath}"/queryseq.fasta -db "${fulldirpath}"/database_blast -outfmt 6 -evalue 10000000 -num_threads 2 -max_hsps 1 -threshold 100 -word_size 2 >> "${fulldirpath}"/BLAST_results
+                        		echo "" >> "${fulldirpath}"/BLAST_results
 
-                        # Overwriting file
-                        cat "${fulldirpath}"/temp_db.fa > "${nonquery_shufseqfile}"
+					# Remove database
+					rm "${fulldirpath}"/database_blast.*
 
-                    done
+                    		done
 
-                    # End BLAST
-                    echo -e "\tBelow are shuffled sequences.\t"
-                    echo -e "BLAST ends now. The results for BLAST is stored in ${fulldirpath}/BLAST_results."
+                    		# End BLAST
+                    		echo -e "BLAST ends now. The results for BLAST is stored in ${fulldirpath}/BLAST_results.txt."
 
-                    # Acquire permission to cat results
-                    while true; do
-                        read -t 60 -p "Do you want to read the results now? (y/n): " answeryn_two
+                    		# Acquire permission to cat results
+                    		while true; do
+                        		read -t 60 -p "Do you want to read the results now? (y/n): " answeryn_two
 
-                        if [[ ${answeryn_two,,} == "y" ]]; then
-                            echo -e "qseqid\tsseqid\tpident\tlength\tmismatch\tgapopen\tqstart\tqend\tsstart\tsend\tevalue\tbitscore\n" > "${tempfile}"
-                            cat "${fulldirpath}"/BLAST_results >> "${tempfile}"
-                            cat "${tempfile}" | column -t
+                        		if [[ ${answeryn_two,,} == "y" ]]; then
+                            			echo -e "qseqid\tsseqid\tpident\tlength\tmismatch\tgapopen\tqstart\tqend\tsstart\tsend\tevalue\tbitscore\n" > "${tempfile}"
+                            			cat "${fulldirpath}"/BLAST_results >> "${tempfile}"
+                            			cat "${tempfile}" | column -t
 
-                            break
+                            			break
 
-                        elif [[ ${answeryn_two,,} == "n" ]]; then
-                            break
+                        		elif [[ ${answeryn_two,,} == "n" ]]; then
+                            			break
                         
-                        else
-                            echo "Invalid answer. Type again please."
-                            continue
+                        		else
+                            			echo "Invalid answer. Type again please."
+                            			continue
                         
-                        fi
+                        		fi
 
-                    done
+                    		done
 
-                    # Integrate information into one file
-                    cat "${shufseqfile}" >> "${fulldirpath}"/BLAST_results
+                    		# Integrate information into one file
+				cp "${fulldirpath}"/BLAST_results "${fulldirpath}"/BLAST_results_old
+                            	echo -e "qseqid\tsseqid\tpident\tlength\tmismatch\tgapopen\tqstart\tqend\tsstart\tsend\tevalue\tbitscore\n" > "${fulldirpath}"/BLAST_results_old
+				echo "" >> "${fulldirpath}"/BLAST_results_old
+				cat "${fulldirpath}"/BLAST_results >> "${fulldirpath}"/BLAST_results_old
+				column -t "${fulldirpath}"/BLAST_results_old > "${fulldirpath}"/BLAST_results
+				
+				prev=""
+				while read line; do
+					curr=$(echo "$line" | awk '{print $1}')
+					if [[ -n "preve" && "${curr}" != "${prev}" ]]; then
+						echo ""
+					fi
+					echo "$line"
+					prev="${curr}"
+				done < "${fulldirpath}"/BLAST_results > "${fulldirpath}"/BLAST_results.txt
+				
+				echo -e "\nShuffled sequences are shown below:\n" >> "${fulldirpath}"/BLAST_results.txt
+                    		cat "${shufseqfile}" >> "${fulldirpath}"/BLAST_results.txt
 
-                    # Acquire permission to remove shufseqfile
-                    while true; do
-                        read -t 60 -p "Do you want to remove the file ${shufseqfile} now? (y/n): " answeryn_three
+                    		# Acquire permission to remove shufseqfile
+                    		while true; do
+                        		read -t 60 -p "Do you want to remove the file ${shufseqfile} now? (y/n): " answeryn_three
 
-                        if [[ ${answeryn_three,,} == "y" ]]; then
-                            echo "Removing file now."
-                            rm "${shufseqfile}"
+                        		if [[ ${answeryn_three,,} == "y" ]]; then
+                            			echo "Removing file now."
+                            			rm "${shufseqfile}"
 
-                            break
+                            			break
 
-                        elif [[ ${answeryn_three,,} == "n" ]]; then
-                            echo "File not removed."
-                            break
+                        		elif [[ ${answeryn_three,,} == "n" ]]; then
+                            			echo "File not removed."
+                            			break
                         
-                        else
-                            echo "Invalid answer. Type again please."
-                            continue
+                        		else
+                            			echo "Invalid answer. Type again please."
+                            			continue
                         
-                        fi
+                        		fi
 
-                    done
+                    		done
 
-                    # Remove useless temporary files/directories
-                    echo "Removing useless tempfiles now."
-                    rm -f "${fulldirpath}"/queryseq.fasta "${fulldirpath}"/temp_db.fa "${fulldirpath}"/database_blast.*
+                    		# Remove useless temporary files/directories
+                    		echo "Removing useless tempfiles now."
+                    		rm -f "${fulldirpath}"/BLAST_results "${fulldirpath}"/queryseq.fasta "${fulldirpath}"/database_blast.* "${nonquery_shufseqfile}" "${fulldirpath}"/BLAST_results_old
 
-                    # Exit program
-                    echo "Existing Program now."
+                    		# Exit program
+                    		echo "Existing Program now."
 
-                    break
+                    		break
             
-                elif [[ ${answeryn,,} == "n" ]]; then
-                    echo "Exiting program now."
-                    break
-                    exit
+                	elif [[ ${answeryn,,} == "n" ]]; then
+                    		echo "Select again please."
+                    		continue 2
             
-                else
-                    echo "Invalid answer. Type again please."
-                    continue
+                	else
+                    		echo "Invalid answer. Type again please."
+                    		continue
             
-                fi
+                	fi
+
+		done
 
                 break
             else
