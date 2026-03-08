@@ -127,9 +127,9 @@
 
                 ```R
                 # Basic format
-                paste("a","b","c",1:3,sep = 'sep')
-                # Returns "asepbsepcsep1" "asepbsepcsep2" "asepbsepcsep3"
-                # pastes the elements together separated by an appointed separator
+                paste("A","B","C",1:3,sep = 'sep')
+                # Returns "AsepBsepCsep1" "AsepBsepCsep2" "AsepBsepCsep3"
+                # Pastes the elements together separated by an appointed separator
 
                 a <- paste("chr","omosome",1:3,sep = '')
                 # Returns "chromosome1" "chromosome2" "chromosome3"
@@ -142,7 +142,7 @@
                 # Returns "chr_X_1;chr_X_2;chr_X_3"
                 # This argument joins all characters together
                 ```
-            * calculation of vectors
+            * Calculation of vectors
 
                 ```R
                 a <- c(1:10)
@@ -157,8 +157,64 @@
 
                 # statistic functions
                 sum(a)  # Returns 55
-                sum(1:100) # Returns 5050
-                median(a) # 
+                sum(1:100)  # Returns 5050
+                median(a)   # Returns 中位数
+                prod(a) # Returns 10! 求积
+                var(a)  # Returns 方差
+                mean(a) # Returns 平均数
+                
+                # sorting functions
+                sort(a) # Sorts the elements in a (升序)
+                rev(a)  # Sorts the elements in a (倒序)
+                order(a)    # Sorts the elements in a (升序) and returns the location of the elements
+                a(order(a)) # Equals to sort(a)
+                ```
+            * Extension on data type: `NA` and `NULL`
+                * Functions
+
+                | `NA` | `NULL` |
+                | :---: | :---: |
+                | represents lack of data | represents non-existing data |
+                | a position without data | no position and no data |
+                * *e.g.*,
+
+                ```R
+                a <- c(NA, NULL, NA)
+                a   # Returns NA NA
+                length(c(NA, NULL, NA))   # Returns 2
+                ```
+        * *Logi* Vectors
+            ```R
+            # Comparing values
+            c(1,2,3) > 2    # Returns FALSE FALSE TRUE
+            a <- c(1,2,3)
+            b <- a > 2  # b is FALSE FALSE TRUE
+            a[b]    # Returns 3
+            # When the length of vector a equals to the length of logi vector b, a[b] returns all elements in a that correspond to TRUE in b
+
+            # Likewise:
+            a <- c(5,1,7,3,9)
+            a[a >= 2 & a <= 7]  # Returns 5 7 3
+            # Because a >= 2 & a <= 7 returns TRUE FALSE TRUE TRUE FALSE
+
+            # AND (&) OR (|) NOT (!)
+            a[a >= 7 | a <= 2]  # Returns 1 7 9
+            a[!a >= 7]  # Returns 5 1 3
+            ```
+        * *Chr* Vectors
+            ```R
+            # UPPER and lower case
+            toupper("RevewillH")  # Returns REVEWILLH
+            tolower("RevewillH")    # Returns revewillh
+
+            # Character counts
+            nchar("RevewillH", type="bytes")    # Length of bytes
+            nchar("RevewillH", type="char") # Length of characters
+
+            # Capture characters
+            substring("RevewillH", 1, 4) # Returns Reve
+            substring("RevewillH", 5) # Returns willH (Default: a single number = from it to the end)
+            ```
 
 
 
