@@ -314,6 +314,7 @@ gsub("[[:alnum:]]+", "$", "1 23 456") # Returns "$ $ $"
     2 4 6 8 10
     ```
 * Creating matrix with vectors
+
     ```R
     # Assign data
     cells <- c(1:4)
