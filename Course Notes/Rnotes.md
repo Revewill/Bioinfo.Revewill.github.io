@@ -26,6 +26,9 @@
         - [2.2.2.2 Advance in Matrices](#2222-advance-in-matrices)
           - [2.2.2.2.1 🚩 **Operation** on rows and cols](#22221--operation-on-rows-and-cols)
           - [2.2.2.2.2 **Advance calculation** of matrices](#22222-advance-calculation-of-matrices)
+      - [2.2.3 **Arrays**](#223-arrays)
+        - [2.2.3.1 Basics in Array](#2231-basics-in-array)
+          - [2.2.3.1.1 **Creating** arrays](#22311-creating-arrays)
 
 ---
 ## 1. [Package installation](#11--install-packages) and [basic commands](#12-basic-commands)
@@ -97,7 +100,7 @@ BiocManager::install("package", ask = F, update = F`)
 ### 2.2 **Data Structure**
 > Go [back](#2-data-type-and-data-structure-in-r), go [down](#221-vectors), or go to [top](#notes-on-r-learning).
 
-> Are storage forms of data, including [Vectors](#221-vectors), [Matrices](#222-matrices), 数组, 数据框, List.
+> Are storage forms of data, including [Vectors](#221-vectors), [Matrices](#222-matrices), [Arrays](#223-arrays), 数据框, List.
 #### 2.2.1 **Vectors**
 * **Vectors** are **strings** of data **of a same type** placed in order
 ##### 2.2.1.1 Basics in Vector
@@ -481,4 +484,24 @@ diag(2,4) # Returns 2*I4
 diag(2,4,5) # Returns a 4*5 matrix with its first 4*4 submatrix being 2*I4
 ```
 > `round` 取整. *e.g.*, `round(0.98)` returns `1`.
+#### 2.2.3 **Arrays**
+* **Arrays** are **multi-dim strings** of data **of a same type**
+  * A matrix could be interpreted as a `2D` array, whereas a vector is `1D`
+##### 2.2.3.1 Basics in Array
+> Go [back](#223-arrays), go [down](), or go to [top](#notes-on-r-learning).
+###### 2.2.3.1.1 **Creating** arrays
+
+```R
+# Creating array
+array(data = NA, dim = c(2,3,4), dimnames = NULL)
+# Returns a 2*3*4 array filled with NA and without dimnames
+
+dimname_A <- c("A1","A2","A3")
+dimname_B <- c("B1","B2","B3")
+dimname_C <- c("C1","C2","C3")
+Ω <- array(1:27, c(3,3,3), dimnames = list(dimname_A, dimname_B, dimname_C))
+# if data doesn't fill the array size, then it will cycle
+```
 ---
+
+
