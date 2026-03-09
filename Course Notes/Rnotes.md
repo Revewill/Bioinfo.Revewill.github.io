@@ -70,17 +70,24 @@ BiocManager::install("package", ask = F, update = F`)
   * *e.g.*, these `3` variables represent `3` different data type
 
     ```R
-    a <- 1
+    a <- 1.4
     b <- TRUE
     d <- "abc"
+    e <- as.integer(2.99)
     ```
     > **`c` is a function**, therefore not commonly used as variables.
-  * `class` function tells the data type
+  * `class` and `is` function tells the data type
 
     ```R
-    class(a)
-    class(b)
-    class(d)
+    class(a)    # Returns numeric
+    class(b)    # Returns logical
+    class(d)    # Returns character
+    class(e)    # Returns integer
+    e   # Returns 2
+
+    is.numeric(a)   # Returns TRUE
+    is.integer(a)   # Returns FALSE
+    is.integer(a)   # Returns TRUE
     ```
 ### 2.2 **Data Structure**
 > Go [back](#2-data-type-and-data-structure-in-r), go [down](#221-vectors), or go to [top](#notes-on-r-learning).
