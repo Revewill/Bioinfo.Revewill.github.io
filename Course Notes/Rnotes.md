@@ -20,7 +20,7 @@
         - [2.2.1.4 🚩 *Chr* Vectors](#2214--chr-vectors)
       - [2.2.2 **Matrices**](#222-matrices)
         - [2.2.2.1 Basics in Matrices](#2221-basics-in-matrices)
-          - [2.2.2.1.2 **Creating** matrices](#22212-creating-matrices)
+          - [2.2.2.1.1 **Creating** matrices](#22211-creating-matrices)
 
 ---
 ## 1. [Package installation](#11--install-packages) and [basic commands](#12-basic-commands)
@@ -285,7 +285,7 @@ gsub("[[:alnum:]]+", "$", "1 23 456") # Returns "$ $ $"
 ##### 2.2.2.1 Basics in Matrices
 > Go [back](#222-matrices), go [down], or go to [top](#notes-on-r-learning).
 
-###### 2.2.2.1.2 **Creating** matrices
+###### 2.2.2.1.1 **Creating** matrices
 * Create matrix with `matrix` function
 
     ```R
