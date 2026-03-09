@@ -14,13 +14,17 @@
           - [2.2.1.1.4 **Deleting** elements within a vector](#22114-deleting-elements-within-a-vector)
         - [2.2.1.2 Advance in Vector](#2212-advance-in-vector)
           - [2.2.1.2.1 🚩 `paste` function](#22121--paste-function)
-          - [2.2.1.2.2 Calculation of vectors](#22122-calculation-of-vectors)
+          - [2.2.1.2.2 **Calculation** of vectors](#22122-calculation-of-vectors)
           - [2.2.1.2.3 Extension on data type: `NA` and `NULL`](#22123-extension-on-data-type-na-and-null)
         - [2.2.1.3 *Logi* Vectors](#2213-logi-vectors)
         - [2.2.1.4 🚩 *Chr* Vectors](#2214--chr-vectors)
       - [2.2.2 **Matrices**](#222-matrices)
         - [2.2.2.1 Basics in Matrices](#2221-basics-in-matrices)
           - [2.2.2.1.1 **Creating** matrices](#22211-creating-matrices)
+          - [2.2.2.1.2 **Accessing** and **modifying** elements within a matrix](#22212-accessing-and-modifying-elements-within-a-matrix)
+          - [2.2.2.1.3 **Calculation** of matrices](#22213-calculation-of-matrices)
+        - [2.2.2.2 Advance in Matrices](#2222-advance-in-matrices)
+          - [2.2.2.2.1 🚩 **Operation** on rows and cols](#22221--operation-on-rows-and-cols)
 
 ---
 ## 1. [Package installation](#11--install-packages) and [basic commands](#12-basic-commands)
@@ -185,7 +189,7 @@ a <- paste("chr","X",1:3,sep = "_",collapse = ";")
 # Returns "chr_X_1;chr_X_2;chr_X_3"
 # This argument joins all characters together
 ```
-###### 2.2.1.2.2 Calculation of vectors
+###### 2.2.1.2.2 **Calculation** of vectors
 
 ```R
 a <- c(1:10)
@@ -277,13 +281,12 @@ gsub("_", "omosome_", "chr_1")    # Returns chromosome_1
 gsub("[[:alpha:]]+", "$", "revewill H") # Returns "$ $"
 gsub("[[:alnum:]]+", "$", "1 23 456") # Returns "$ $ $"
 ```
-> `[[:pattern:]]` is a regular expression corresponding to **one match** of `pattern`. `alpha` means *letters* (ignoring upper/lower cases), `alnum` means *numbers*, `+` means the pattern before `+` *can occur single or multiple time(s)*.
-            
-> See [regular expression] for more.
+> ※ `[[:pattern:]]` is a regular expression corresponding to **one match** of `pattern`. `alpha` means *letters* (ignoring upper/lower cases), `alnum` means *numbers*, `+` means the pattern before `+` *can occur single or multiple time(s)*.
+> See [regular expression]() for more.
 #### 2.2.2 **Matrices**
 * **Matrices** are **`2D` strings** of data **of a same type**
 ##### 2.2.2.1 Basics in Matrices
-> Go [back](#222-matrices), go [down], or go to [top](#notes-on-r-learning).
+> Go [back](#222-matrices), go [down](#2222-advance-in-matrices), or go to [top](#notes-on-r-learning).
 
 ###### 2.2.2.1.1 **Creating** matrices
 * Create matrix with `matrix` function
@@ -341,4 +344,98 @@ gsub("[[:alnum:]]+", "$", "1 23 456") # Returns "$ $ $"
     Row1  1    3
     Row2  2    4
     ```
+* ※ Creating things with `rnorm`
 
+```R
+matrix(rnorm(15),5,3)
+# Returns a 5*3 matrix with 15 random numbers
+
+# rnorm
+rnorm(n, mean = 0, sd = 1)
+# Randomly generate n numbers that obey normal distribution
+# Default mean = 0, standard deviation = 1
+```
+###### 2.2.2.1.2 **Accessing** and **modifying** elements within a matrix
+
+```R
+A <- matrix(1:10, nrow = 2)
+A
+# Returns
+1 3 5 7 9
+2 4 6 8 10
+
+# Access the second row
+A[2,] # Returns 2 4 6 8 10
+# Access the second column
+A[,2] # Returns 3 4
+# Access the (2,2) element
+A[2,2]  # Returns 4
+
+# Modifying rows and columns
+A[2,] <- c(as.numeric(paste(1, A[2,1:4], sep = '')), 20)
+A[2,]
+# Returns
+12 14 16 18 20
+# Modifying elements
+A[1,1] <- 0
+A[1,1]  # Returns 0
+
+# Acquiring information on matrix
+dim(A)  # Returns 2 5 (2 rows, 5 cols)
+nrow(A) # Returns 2
+ncol(A) # Returns 5
+```
+###### 2.2.2.1.3 **Calculation** of matrices
+
+```R
+# Transposition
+t(A)
+# Returns
+1 2
+3 4
+5 6
+7 8
+9 10
+
+# Linear calculations
+X <- matrix(1:4, nrow = 2)
+Y <- matrix(5:8, nrow = 2)
+X + Y # Addition
+X - Y # Subtraction
+X * Y # Must be same dimension as well
+# Not Matrix Multiplication in Linear Algebra!
+# But each element in X multiplied by corresponding element in Y
+# Returns
+1*5 3*7
+2*6 4*8
+# Namely
+5  21
+12 32
+X / Y # Similar to multiplication above
+
+# Matrix multiplication (as in Linear Algebra)
+X %*% Y # Multiplication
+# Returns
+23 31
+34 46
+```
+##### 2.2.2.2 Advance in Matrices
+> Go [back](#222-matrices), go [down], or go to [top](#notes-on-r-learning).
+
+###### 2.2.2.2.1 🚩 **Operation** on rows and cols
+
+```R
+A <- matrix(1:10, nrow = 2)
+
+# Sums and means
+rowSums(A)  # Returns 25 30 (a 2D vector)
+colSums(A)  # Returns 3 7 11 15 19 (a 5D vector)
+mean(A) # Returns 5.5
+rowMeans(A)
+colMeans(A)
+
+# 🚩 Binding of rows and cols
+
+
+```
+---
