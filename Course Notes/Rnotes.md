@@ -41,6 +41,9 @@
           - [2.2.5.1.2 **Accessing** and **modifying** elements within a list](#22512-accessing-and-modifying-elements-within-a-list)
           - [2.2.5.1.3 **Operation** on lists](#22513-operation-on-lists)
         - [2.2.5.2 Advance in List](#2252-advance-in-list)
+  - [3. Data Management](#3-data-management)
+    - [2.1 **Importing** and **exporting** common files](#21-importing-and-exporting-common-files)
+      - [2.1.1 **Importing** `csv` files](#211-importing-csv-files)
 
 ---
 ## 1. [Package installation](#11--install-packages) and [basic commands](#12-basic-commands)
@@ -852,5 +855,9 @@ DF[,1]
 [1] 1 2
 # Extracting a column is extracting the corresponding vector
 ```
-
 ---
+## 3. Data Management
+### 2.1 **Importing** and **exporting** common files
+> Go [back](#3-data-management), go [down](), or go to [top](#notes-on-r-learning).
+#### 2.1.1 **Importing** `csv` files
+
