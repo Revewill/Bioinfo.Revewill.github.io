@@ -50,6 +50,7 @@
     - [4.1 **Loop** Sentences](#41-loop-sentences)
       - [4.1.1 `for` loop](#411-for-loop)
       - [4.1.2 `while` loop](#412-while-loop)
+    - [4.2 `apply` Functions](#42-apply-functions)
 
 ---
 ## 1. Package installation and basic commands
@@ -939,7 +940,7 @@ write.table(TXT_Data, "new_sample.txt", sep = "\t")
 ```
 ## 4. Advanced Data Management
 ### 4.1 **Loop** Sentences
-> Go [back](#4-advanced-data-management), go [down](), or go to [top](#notes-on-r-learning).
+> Go [back](#4-advanced-data-management), go [down](#42-apply-functions), or go to [top](#notes-on-r-learning).
 #### 4.1.1 `for` loop
 * Basics in `for` loop
 
@@ -1029,13 +1030,17 @@ write.table(TXT_Data, "new_sample.txt", sep = "\t")
   print(i)  # Returns 3
   # Each time the statement is done, condition will be checked for TRUE or FALSE
   # The loop discontinue at logi value FALSE
+  ```
+* `while` can do sth. `for` can't
 
-  # Why while is needed
+  ```R
   a <- seq(1,1000000,287)
   i <- 1000000
+
   while (a[i] > 931256) {
     i = i - 1
   }
+
   print(
     paste(
       "The first element to exceed 931256 is ",
@@ -1046,3 +1051,5 @@ write.table(TXT_Data, "new_sample.txt", sep = "\t")
   )
   # Returns The first element to exceed 931256 is 931316.
   ```
+### 4.2 `apply` Functions
+> Go [back](#4-advanced-data-management), go [down](), or go to [top](#notes-on-r-learning).
