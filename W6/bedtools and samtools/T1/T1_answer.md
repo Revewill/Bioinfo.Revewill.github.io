@@ -1,12 +1,12 @@
 # Dstinguishing between single- and paired-end sequencing
 > An answer `md` file for Bioinformatics_Homework_Mapping_bedtools_and_samtools_T1
+---
 * `samtools flagstat` reads and demonstrates `FLAG` data in `bam` files
   * `paired in sequencing`, `read1`, `read2`, etc. are all relevant with paired-end sequencing
 * File `COAD.ACTB.bam` is a single-end sequencing file
 
-    ```bash
+    ```
     $ samtools flagstat COAD.ACTB.bam
-    # Returns
     185650 + 0 in total (QC-passed reads + QC-failed reads)
     4923 + 0 secondary
     0 + 0 supplementary
@@ -23,3 +23,4 @@
     ```
   * Contains no paired-sequencing reads
   * Suggests it's single-ended
+---
