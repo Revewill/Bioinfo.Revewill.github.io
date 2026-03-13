@@ -51,6 +51,11 @@
       - [4.1.1 `for` loop](#411-for-loop)
       - [4.1.2 `while` loop](#412-while-loop)
     - [4.2 `apply` Functions](#42-apply-functions)
+      - [4.2.1 `apply` function](#421-apply-function)
+        - [4.2.1.1 Basic grammar](#4211-basic-grammar)
+        - [4.2.2.2 Example](#4222-example)
+      - [4.2.2 `tapply` function](#422-tapply-function)
+        - [4.2.2.1 Basic Grammar](#4221-basic-grammar)
 
 ---
 ## 1. Package installation and basic commands
@@ -87,10 +92,10 @@ BiocManager::install("package", ask = F, update = F)
     a = 0
     ```
   > `<-` could be typed with `Alt`+`-`
-* Remove
+* Remove files or variants
 
     ```R
-    rm("sth")
+    rm("files_or_variants")
     ```
 ---
 ## 2. Data Type and Data Structure in `R`
@@ -1053,3 +1058,60 @@ write.table(TXT_Data, "new_sample.txt", sep = "\t")
   ```
 ### 4.2 `apply` Functions
 > Go [back](#4-advanced-data-management), go [down](), or go to [top](#notes-on-r-learning).
+
+> `apply` functions are a family of functions to replace `for` loop for maximum computation speed
+* `apply` functions function on *arrays* or *lists*
+  * ※ *matrices*/*vectors* are specific *arrays*; *data frames* are specific *lists*
+  * Family members in `apply`
+  
+    | Target | Apply to **every element** | Apply to a **subset** |
+    | :---: | :---: | :---: |
+    | *Array* | `apply` | `tapply` |
+    | *List* | `lapply` (including simpler `sapply`) | `by` |
+#### 4.2.1 `apply` function
+##### 4.2.1.1 Basic grammar
+> Go [back](#421-apply-function), go [down](#4222-example), or go to [top](#notes-on-r-learning).
+
+```R
+apply(array, margin, FUN)
+```
+* `margin` defines which dimension to operate
+  > *e.g.*, for a *matrix*, `margin` = `1` means operating on its rows, = `2` means operating on its cols
+* `FUN` is the operation to apply on the defined `margin`
+##### 4.2.2.2 Example
+> Go [back](#421-apply-function), go [down](#422-tapply-function), or go to [top](#notes-on-r-learning).
+
+```R
+# 2D array
+M <- array(1:10, c(2,5))
+M
+# Returns
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    3    5    7    9
+[2,]    2    4    6    8   10
+
+apply(M, 1, sum)  # Sum in each row
+# Returns
+[1] 25 30
+apply(M, 2, sum)  # Sum in each col
+# Returns
+[1]  3  7 11 15 19
+
+# 3D array
+Ω <- array(1:24, c(2,3,4))
+apply(Ω, 1, sum)
+# Returns
+[1] 144 156 # length=2 vector
+apply(Ω, 2, sum)
+# Returns
+[1]  84 100 116 # length=3 vector
+
+apply(Ω, c(1,2), sum)
+# Returns 2*3 matrix
+     [,1] [,2] [,3]
+[1,]   40   48   56
+[2,]   44   52   60
+```
+#### 4.2.2 `tapply` function
+##### 4.2.2.1 Basic Grammar
+> Go [back](#422-tapply-function), go [down](), or go to [top](#notes-on-r-learning).
