@@ -56,7 +56,7 @@
         - [4.2.2.2 Example](#4222-example)
       - [4.2.2 `tapply` function](#422-tapply-function)
         - [4.2.2.1 Basic Grammar](#4221-basic-grammar)
-      - [4.2.2.2 Example](#4222-example-1)
+        - [4.2.2.2 Example](#4222-example-1)
       - [4.2.3 `by` function](#423-by-function)
       - [4.2.4 `lapply` function](#424-lapply-function)
         - [4.2.4.1 Basic Grammar](#4241-basic-grammar)
@@ -1128,7 +1128,7 @@ tapply(array, indices, FUN = NULL)
 ```
 * `indices` is a group variant that selects the target from the array, similar to `margin`
 * `FUN` describes the operation
-#### 4.2.2.2 Example
+##### 4.2.2.2 Example
 > Go [back](#422-tapply-function), go [down](#423-by-function), or go to [top](#notes-on-r-learning).
 
 ```R
