@@ -71,7 +71,7 @@ $$
 * Formula
 
 $$
-\log_2 \left( \hat{c}_j^{\text{TMM}} \right) = \frac{\sum_{i \in G^*} w_{ij} M_{ij}^r}{\sum_{i \in G^*} w_{ij}}
+\log_2 \left( \hat{c}_j^{\text{TMM}} \right) = \frac{\sum_{i \in G^{*}} w_{ij} M_{ij}^r}{\sum_{i \in G^{*}} w_{ij}}
 $$
 
 ---
