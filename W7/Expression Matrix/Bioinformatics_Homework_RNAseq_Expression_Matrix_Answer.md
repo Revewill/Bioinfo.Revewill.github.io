@@ -60,7 +60,7 @@ $$
 * Formula
 
 $$
-s_j = \operatorname{median}_{i} \frac{k_{ij}}{\left(\prod_{v=1}^{m} k_{iv}\right)^{1/m}}
+s_j = \text{median}_{i} \frac{k_{ij}}{\left(\prod_{v=1}^{m} k_{iv}\right)^{1/m}}
 $$
 
 $$
