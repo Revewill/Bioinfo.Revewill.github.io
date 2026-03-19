@@ -97,227 +97,263 @@ $$
   | **dUTPs method** | **A.** 4 | **Strand-specific** with **antisense** reads 1 method, raw counts = reads 2 mapped onto Gene G and reads 1 mapped onto its complementary strand |
 ---
 ### T3
-> Calculating read count matrix for `shape02`
+> Finding differentially expressed genes in *uvr8* using `DESeq2` and `edgeR`
 
-> Direct to [top](#expression-matrix) quickly here.
-#### T3.1 Sequencing protocol of `Shape02`
-* Data in `Shape02` is **strand nonspecific**
-* Method for judgement is shown here
+> Direct to [top](#differential-expression) quickly here.
+#### 1. `R` Script
+* You may download `R` script for both [`DESeq2`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T3/Script/T3.DESeq2.R) and [`edgeR`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T3/Script/T3.edgeR.R) here
+* The scripts are also shown here (direct to [`DESeq2`](#T3DESeq2code) or [`edgeR`](#T3edgeRcode))
+  > Click [here](#2-txt-results) to skip the following codes
     
-    ```bash
-    $ /usr/local/bin/infer_experiment.py \
-    > -r GTF/Arabidopsis_thaliana.TAIR10.34.bed \
-    > -i bam/Shape02.bam
-    # Returns
-    Reading reference gene model GTF/Arabidopsis_thaliana.TAIR10.34.bed ... Done
-    Loading SAM/BAM file ...  Total 200000 usable reads were sampled
+    [Script for `DESeq2`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T3/Script/T3.DESeq2.R)
+    <a name="T3DESeq2code"></a>
+    ```R
+    # Read from table and filter uvr8 counts
+    raw.counts <- read.table(
+        "count_exon.txt",
+        sep='\t',
+        header = TRUE,
+        row.names = 1)
 
+    uvr8.raw.counts <- raw.counts[,c(
+        "UD1_1", "UD1_2", "UD1_3",
+        "UD0_1", "UD0_2", "UD0_3")]
 
-    This is PairEnd Data
-    Fraction of reads failed to determine: 0.0315
-    Fraction of reads explained by "1++,1--,2+-,2-+": 0.4769
-    Fraction of reads explained by "1+-,1-+,2++,2--": 0.4916
+    uvr8.filtered.counts <- uvr8.raw.counts[rowMeans(
+        uvr8.raw.counts) > 5, ]
+
+    # Generate condition and colData for DESeq2
+    uvr8.conditions <- factor(
+        c(rep("Control", 3), rep("Treatment", 3)),
+        levels = c("Control","Treatment"))
+
+    uvr8.colData <- data.frame(
+        row.names = colnames(uvr8.filtered.counts),
+        conditions=uvr8.conditions)
+
+    # Use DESeq2 to analyze data
+    suppressPackageStartupMessages(library(DESeq2))
+    # Create dataset
+    uvr8.dataset <- DESeqDataSetFromMatrix(
+        uvr8.filtered.counts,
+        uvr8.colData,
+        design = ~ conditions)
+    # Analyze
+    uvr8.dataset <- DESeq(uvr8.dataset)
+    uvr8.result <- results(uvr8.dataset)
+
+    # Output as .txt file
+    write.table(
+        uvr8.result,
+        "uvr8.light.vs.dark.all.DESeq2.txt",
+        sep='\t',
+        row.names = TRUE,
+        quote = FALSE)
     ```
-    * From these outputs, we can infer the data is **strand non-specific** based on that **`"1++,1--,2+-,2-+"` fraction** is approximately equal to **`"1+-,1-+,2++,2--"` fraction**
-#### T3.2 Generating read count matrix for `Shape02` data
-> Check output file for read count matrix [here](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Expression%20Matrix/T3/Shape02.featurecounts.exon.txt)
-> Click [here](#t33-counts-on-gene-at1g09530-pif3) to skip the following code
 
-```bash
-$ /home/software/subread-2.0.3-source/bin/featureCounts \
-> -s 0 -p \
-> -t exon \
-> -g gene_id \
-> -a GTF/Arabidopsis_thaliana.TAIR10.34.gtf 
-> -o result/Shape02.featurecounts.exon.txt \
-> bam/Shape02.bam
-# Returns
+    [Script for `edgeR`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T3/Script/T3.edgeR.R)
+    <a name="T3edgeRcode"></a>
+    ```R
+    # Read from table and filter uvr8 counts
+    raw.counts <- read.table(
+        "count_exon.txt",
+        sep='\t',
+        header = TRUE,
+        row.names = 1)
 
-        ==========     _____ _    _ ____  _____  ______          _____
-        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \
-          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
-            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
-              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
-        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
-          v2.0.3
+    uvr8.raw.counts <- raw.counts[,c(
+        "UD1_1", "UD1_2", "UD1_3",
+        "UD0_1", "UD0_2", "UD0_3")]
 
-//========================== featureCounts setting ===========================\\
-||                                                                            ||
-||             Input files : 1 BAM file                                       ||
-||                                                                            ||
-||                           Shape02.bam                                      ||
-||                                                                            ||
-||             Output file : Shape02.featurecounts.exon.txt                   ||
-||                 Summary : Shape02.featurecounts.exon.txt.summary           ||
-||              Paired-end : yes                                              ||
-||        Count read pairs : no                                               ||
-||              Annotation : Arabidopsis_thaliana.TAIR10.34.gtf (GTF)         ||
-||      Dir for temp files : result                                           ||
-||                                                                            ||
-||                 Threads : 1                                                ||
-||                   Level : meta-feature level                               ||
-||      Multimapping reads : not counted                                      ||
-|| Multi-overlapping reads : not counted                                      ||
-||   Min overlapping bases : 1                                                ||
-||                                                                            ||
-\\============================================================================//
+    uvr8.filtered.counts <- uvr8.raw.counts[rowMeans(
+        uvr8.raw.counts) > 5,]
 
-//================================= Running ==================================\\
-||                                                                            ||
-|| Load annotation file Arabidopsis_thaliana.TAIR10.34.gtf ...                ||
-||    Features : 313952                                                       ||
-||    Meta-features : 32833                                                   ||
-||    Chromosomes/contigs : 7                                                 ||
-||                                                                            ||
-|| Process BAM file Shape02.bam...                                            ||
-||    Paired-end reads are included.                                          ||
-||    The reads are assigned on the single-end mode.                          ||
-||    Total alignments : 2730443                                              ||
-||    Successfully assigned alignments : 2559170 (93.7%)                      ||
-||    Running time : 0.08 minutes                                             ||
-||                                                                            ||
-|| Write the final count table.                                               ||
-|| Write the read assignment summary.                                         ||
-||                                                                            ||
-|| Summary of counting results can be found in file "result/Shape02.featurec  ||
-|| ounts.exon.txt.summary"                                                    ||
-||                                                                            ||
-\\============================================================================//
+    # Generate condition and design for DESeq2
+    uvr8.conditions <- factor(
+        c(rep("Control", 3), rep("Treatment", 3)),
+        levels = c("Control","Treatment"))
 
-```
-#### T3.3 Counts on gene `AT1G09530` (`PIF3`)
+    uvr8.design <- model.matrix(~ uvr8.conditions)
 
-```bash
-awk '$1 == "AT1G09530"{print $0}' result/Shape02.featurecounts.exon.txt \
-> | awk '{print $NF}'
-# Returns
-86
-```
+    # Use edgeR to analyze data
+    library(edgeR)
+    uvr8.result <- DGEList(counts = uvr8.filtered.counts)
+    # Generate TMM matrix
+    uvr8.result <- calcNormFactors(uvr8.result, method = "TMM")
+    # Esimate dispersion
+    uvr8.result <- estimateDisp(uvr8.result, design = uvr8.design)
+    fit <- glmFit(uvr8.result, design = uvr8.design)
+    # Likelihood ratio test (lrt)
+    lrt <- glmLRT(fit, coef = 2) 
+
+    # Output as .txt file
+    uvr8.result <- topTags(lrt, n = nrow(uvr8.result))$table
+    write.table(
+        uvr8.result,
+        "uvr8.light.vs.dark.all.edgeR.txt",
+        sep='\t',
+        row.names = TRUE,
+        col.names = TRUE,
+        quote = FALSE)
+    ```
+#### 2. `txt` Results
+* You may download `txt` result files for both [`DESeq2`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T3/Results/uvr8.light.vs.dark.all.DESeq2.txt) and [`edgeR`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T3/Results/uvr8.light.vs.dark.all.edgeR.txt) here
 ---
 ### T4
-> Heatmap analysis on transcriptome in cancer
+> *Venn* diagram for comparison between `DESeq2` and `edgeR` results
 
-> Direct to [top](#expression-matrix) quickly here.
-* For `R` script, [download](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Expression%20Matrix/T4/Script/T4_script.R) or [view script here](#Rcode)
-* For heatmap, check result in [`png`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Expression%20Matrix/T4/Results/T4_results_heatmap.png) or in [`pdf`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Expression%20Matrix/T4/Results/T4_results_heatmap.pdf) format
-* Based on heatmap visualization, **transcriptomes of COAD and READ are most similar** due to their numerous co-occurrences within the same lineage
+> Direct to [top](#differential-expression) quickly here.
+* For `R` script, [download](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T4/Script/T4.R) or [view script here](#T4Rcode)
+    > Click [here](#T4Rcodeend) to skip the following code
 
-    <a name="Rcode"></a>
+    <a name="T4Rcode"></a>
     ```R
-    main_dir <- "tumor-transcriptome-demo"
-    sub_dir <- c("COAD", "ESCA", "READ")
+    # Read from table
+    DESeq2.raw.data <- read.table(
+        "uvr8.light.vs.dark.all.DESeq2.txt",
+        header = TRUE, sep = "\t", row.names = 1)
+    edgeR.raw.data <- read.table(
+        "uvr8.light.vs.dark.all.edgeR.txt",
+        header = TRUE, sep = "\t", row.names = 1)
 
-    # all_data and all_files are empty lists for data storage
-    all_data <- list()
-    all_files <- list()
+    # Select genes with significant expression changes
+    DESeq2.filtered.data <- DESeq2.raw.data[
+        !is.na(DESeq2.raw.data$padj) &
+        abs(DESeq2.raw.data$log2FoldChange) > 1 &
+        DESeq2.raw.data$padj < 0.05,]
+    edgeR.filtered.data <- edgeR.raw.data[
+        abs(edgeR.raw.data$logFC) > 1 &
+        edgeR.raw.data$FDR < 0.05,]
 
-    # Import data and files
-    for (i in sub_dir) {
-        all_files[[i]] <- list.files(
-            path = file.path(main_dir, i),
-            pattern = "\\.txt$",
-            full.names = TRUE)
-        all_data[[i]] <- lapply(all_files[[i]], read.table)
-    }
+    # Determine intersection number
+    DESeq2.genes <- rownames(DESeq2.filtered.data)
+    edgeR.genes <- rownames(edgeR.filtered.data)
 
-    # Extract rownames and colnames for matrix
-    # Gene names
-    genname <- all_data[["COAD"]][[1]][-1,]$V1
+    intersect <- length(intersect(DESeq2.genes, edgeR.genes))
+    DESeq2.only <- length(setdiff(DESeq2.genes, edgeR.genes))
+    edgeR.only <- length(setdiff(edgeR.genes, DESeq2.genes))
 
-    # Sample
-    index <- 1
-    sample <- c()
-    for (i in 1:3) {
-        for (j in 1:50) {
-
-            # Extract each sample name
-            name <- strsplit(as.vector(all_files[[i]][j]), "/")[[1]]
-            name <- name[3]
-            name <- strsplit(name, ".txt")
-
-            # Write into vector sample
-            sample[index] <- paste(sub_dir[i], name, sep = ": ")
-
-            # Add index
-            index <- index + 1
-        }
-    }
-
-    # Extract counts
-    counts.matrix <- matrix(NA,
-        nrow = length(genname),
-        ncol = length(sample),
+    # Create Venn diagram
+    library(VennDiagram)
+    grid.newpage()
+    venn.plot <- draw.pairwise.venn(
+        area1 = DESeq2.only + intersect,
+        area2 = edgeR.only + intersect,
+        cross.area = intersect,
+        category = c("DESeq2", "edgeR"),
+        fill = c("lightblue", "lightgreen"),
+        alpha = 0.5,
+        lty = "blank",
+        cex = 1.5,
+        cat.cex = 1.5,
+        cat.pos = c(0, 0),
+        cat.dist = 0.05
     )
-    rownames(counts.matrix) <- genname
-    colnames(counts.matrix) <- sample
 
-    index <- 1
-    for (i in 1:3) {
-        for (j in 1:50) {
-            # Calculate index
-            index <- (i-1)*50 + j
-
-            # Write into counts
-            counts.matrix[,index] <- as.numeric(all_data[[i]][[j]][-1,]$V7)
-
-            # Add index
-            index <- index + 1
-        }
-    }
-
-    # Create logCPM matrix
-    library(edgeR)
-    y <- DGEList(counts = counts.matrix)
-    CPM.matrix <- edgeR::cpm(y, log = F)
-    log10.CPM.matrix <- log10(CPM.matrix + 1)
-
-    # Create z-score matrix
-    z.scores.matrix <- (log10.CPM.matrix - rowMeans(log10.CPM.matrix))/apply(log10.CPM.matrix, 1, sd)
-
-    # Visualize in pheatmap
-    library(pheatmap)
-
-    # Clip
-    z.scores.clipped <- z.scores.matrix
-    z.scores.clipped[z.scores.clipped > 2] <- 2
-    z.scores.clipped[z.scores.clipped < -2] <- -2
-
-    # Fliter
-    rows_without_na <- !apply(z.scores.clipped, 1, function(x) any(is.na(x)))
-    z.scores.clipped <- z.scores.clipped[rows_without_na,]
-
-    # Annotation on rows and cols
-    annotation_col <- data.frame(
-        CancerType = factor(rep(c("COAD", "ESCA", "READ"), each = 50))
-    )
-    rownames(annotation_col) <- colnames(z.scores.clipped)
-
-    ann_colors <- list(
-        CancerType = c("COAD" = "#E41A1C",
-                    "ESCA" = "#377EB8",
-                    "READ" = "#4DAF4A"))
-
-    # Create map
-    pheatmap(z.scores.clipped,
-            main = "T4_results_heatmap",
-            cluster_cols = TRUE,
-            cluster_rows = FALSE,
-            cutree_cols = 5,
-            annotation_col = annotation_col,
-            annotation_colors = ann_colors,
-            show_rownames = FALSE,
-            show_colnames = FALSE,
-            color = colorRampPalette(c("#2166AC", "#F7F7F7", "#B2182B"))(100),
-            fontsize = 8,
-            fontsize_row = 6,
-            fontsize_col = 6,
-            legend = TRUE,
-            legend_breaks = c(-2, -1, 0, 1, 2),
-            legend_labels = c("<= -2", "-1", "0", "1", ">= 2"),
-            filename = "T4_results_heatmap.pdf",
-            width = 10,
-            height = 12
-    )
+    # Output as png
+    png("T4_results_venndiagram.png", width = 800, height = 600, res = 120)
+    grid.draw(venn.plot)
+    dev.off()
     ```
+    <a name="T4Rcodeend"></a>
+* For *venn* diagram, download [here](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T4/Results/T4_results_venndiagram.png)
+![venndiagram](./T4/Results/T4_results_venndiagram.png)
 ---
 ### T5
+> Selecting appointed genes and creating heatmap
+
+> Direct to [top](#differential-expression) quickly here.
+* For `R` script, [download](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T5/Script/T5.R) or [view script here](#T5Rcode)
+    > Click [here](#T5Rcodeend) to skip the following code
+
+    <a name="T5Rcode"></a>
+    ```R
+    # Read from table
+    edgeR.raw.data <- read.table(
+        "uvr8.light.vs.dark.all.edgeR.txt",
+        header = TRUE, sep = "\t", row.names = 1)
+    raw.data <- read.table(
+        "count_exon.txt",
+        header = TRUE, sep = "\t", row.names =1)
+
+    # Select genes in edgeR with FDR < 0.05
+    edgeR.filtered.data <- edgeR.raw.data[
+        edgeR.raw.data$FDR < 0.05,]
+    # Sort genes based on logFC
+    edgeR.sorted.data <- edgeR.filtered.data[
+        order(
+            edgeR.filtered.data$logFC,
+            decreasing = TRUE
+        ),]
+    num <- nrow(edgeR.sorted.data)
+    edgeR.selected.genes <- rownames(edgeR.sorted.data[
+        c(1:10, (num - 9):num),])
+
+    # Calculate log10CPM and z-scores for raw.data
+    library(edgeR)
+    y <- DGEList(counts = raw.data)
+    CPM.matrix <- edgeR::cpm(y, log = F)
+    log10.CPM.matrix <- log10(CPM.matrix + 1)
+    z.scores.matrix <- (log10.CPM.matrix - rowMeans(log10.CPM.matrix))/apply(log10.CPM.matrix, 1, sd)
+
+    # Select previous genes
+    z.scores.matrix <- z.scores.matrix[
+        rownames(z.scores.matrix) %in% edgeR.selected.genes,]
+
+    # Draw heatmap
+    suppressPackageStartupMessages(library(ComplexHeatmap))
+    suppressPackageStartupMessages(library(circlize))
+    # Annotations
+    ann <- HeatmapAnnotation(
+        Groups = rep(c(
+            "dark, WT", "light, WT", "dark, uvr8", "light, uvr8"
+            ), each = 3),
+        col = list(Groups = c(
+            "dark, WT" = "#245219",
+            "light, WT" = "#9deb9d", 
+            "dark, uvr8" = "#542354",
+            "light, uvr8" = "#ea86c7"
+        )),
+        annotation_legend_param = list(
+            Groups = list(
+                title = "Groups",
+                labels = c(
+                    "dark, WT", 
+                    "light, WT", 
+                    expression(paste("dark,", italic("uvr8"))),
+                    expression(paste("light,", italic("uvr8")))
+                ),
+                at = c("dark, WT", "light, WT", "dark, uvr8", "light, uvr8")
+            )
+        )
+    )
+
+    # Create map
+    heatmap <- Heatmap(
+        z.scores.matrix,
+        name = "T5_result_heatmap",
+        column_title = "T5_results_heatmap",
+        top_annotation = ann,
+        cluster_columns = FALSE,
+        column_split = rep(1:4, each = 3),
+        row_split = 2,
+        show_row_names = TRUE,
+        show_column_names = TRUE,
+        col = colorRamp2(c(-2, 0, 2), c("#2166AC", "#F7F7F7", "#B2182B")),  # 颜色设置
+        row_names_gp = gpar(fontsize = 6),
+        column_names_gp = gpar(fontsize = 6),
+        heatmap_legend_param = list(
+            title = "z-score",
+            at = c(-2, -1, 0, 1, 2),
+            labels = c("<= -2", "-1", "0", "1", ">= 2")
+        )
+    )
+
+    # Save as pdf
+    pdf("T5_results_heatmap.pdf", width = 10, height = 12)
+    draw(heatmap)
+    dev.off()
+    ```
+    <a name="T5Rcodeend">
+* For heatmap, download in [`png`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T5/Results/T5_results_heamap.png) or [`pdf`](https://revewill.github.io/Bioinfo.Revewill.github.io/W7/Differential%20Expression/T5/Results/T5_results_heamap.pdf)
+![heatmap](./T5/Results/T5_results_heatmap.png)
