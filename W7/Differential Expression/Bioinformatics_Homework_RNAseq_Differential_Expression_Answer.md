@@ -24,6 +24,11 @@
 * Is the **expected proportion of false positives** among **all** rejected hypotheses
 * Controls false discovery rate across **multiple tests**
   * There's an expected `5%` of significant yields that are false positives.
+* Formula
+
+$$
+q_{(i)} = \min_{k \geq i} \left( \frac{m \times p_{(k)}}{k} \right)
+$$
 ##### 2.3 Key differences
 
 | Value | Scope | Interpretation |
@@ -35,9 +40,7 @@
 * Applies to **paired-end** sequencing data, sensitive to library capacity and genes with high expression
 * Formula
 
-$$
-q_{(i)} = \min_{k \geq i} \left( \frac{m \times p_{(k)}}{k} \right)
-$$
+
 ##### 2.4 `TPM`, Transcripts per million
 * Applies best to **between-sample** analysis, stable (with identical mean value between samples)
 * Formula
