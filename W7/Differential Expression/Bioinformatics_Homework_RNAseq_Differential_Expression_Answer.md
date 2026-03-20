@@ -37,22 +37,100 @@ $$
 | `q-value`| Multiple test | This set of significant results contains about `5%` expected false positives. |
 ---
 ### T2
-> Normalization methods in [`edgeR`](#1-normalization-in-edger) and [`DESeq2`](#2-normalization-in-deseq2)
+> Normalization methods in [`edgeR`](#1-normalization-in-edger-tmm) and [`DESeq2`](#2-normalization-in-deseq2-rle)
 
 > Direct to [top](#differential-expression) quickly here.
 #### 1. Normalization in `edgeR`: `TMM`
-> `TMM`, Trimmed Mean of M-values
+> `TMM`, Trimmed Mean of `M-values`
 
 * Basic assumption
   * Most genes are **not differentially expressed** genes
-  * **Normalization factor** could be calculated from weighted average of expression ratios
+  * **Normalization factor** could be calculated from weighted average of `M-values` to counterbalance deviations brought by **sequencing depth**
 * Calculation method
+  * 1. **Select a reference sample**
+    * Select the sample of which the **`75%` quantile** of all gene expression levels is the **closest to average**
+    * This sample is **reference sample**, marked as **$r$**
+  * 2. **Calculate $M_g$ and $A_g$ values for each gene $g$**
+    > $K_{gj}$ = raw count of gene $g$ in sample $j$
+    > $D_{j}$ = all raw counts in sample $j$
 
-$$
-M_{g} = \log_{2} \frac{K_{gj}/D_{j}}{K_{gr}/D_{r}}
-$$
+    * `M-value` indicates **fold change** of gene $g$ in sample $j$ relative to $r$
 
-#### 2. Normalization in `DESeq2`
+        $$
+        M_{g} \left(j,r \right) = \log_{2} \frac{K_{gj}/D_{j}}{K_{gr}/D_{r}}
+        $$
+
+    * `A-value` indicates the expression of gene $g$ in sample $j$ relative to $r$
+
+        $$
+        A_{g} \left(j,r \right) = \frac{1}{2} \log_{2} \left( {\frac{K_{gj}}{D_{j}}} \times{\frac{K_{gr}}{D_{r}}} \right)
+        $$
+  * 3. **Select a representative gene set**
+    * Ensures a reliable gene set for calculating **normalization factor** by excluding potential **differentially expressed** genes
+    * Trim `M-value` by `30%` and trim `A-value` by `5%`
+    * The representative gene set after trimming is marked as $G$
+  * 4. **Calculate weight for each gene in $G$**
+    * Bestow higher weight upon genes with higher counts and higher stability
+
+        $$
+        w_{g} \left(j,r \right) = \left(\frac{D_{j} - K_{gj}}{D_{j} \times K_{gj}} + \frac{D_{r} - K_{gr}}{D_{r} \times K_{gr}} \right)^{-1}
+        $$
+  * 5. **Calculate `TMM` value for sample $j$**
+    * `TMM` value is practically a weighted average of $M_g$
+
+        $$
+        \text{TMM} \left(j,r \right) = \frac{\sum_{g \in G} w_{g} \left(j,r \right) \times M_{g} \left(j,r \right)}{\sum_{g \in G} w_{g} \left(j,r \right)}
+        $$
+
+    * It represents the **deviation** of sample $j$ from $r$
+  * 6. **Apply ultimate normalization factor**
+    * Calculate **normalization factor $C_j$**
+
+        $$
+        C_{j} = 2 ^ {\text{TMM} \left(j,r \right)}
+        $$
+
+    * Apply $C_j$ to **normalize** counts
+
+        $$
+        \left(\text{Normalized count} \right)_{gj} = \frac{K_{gj}}{C_{j}}
+        $$
+
+#### 2. Normalization in `DESeq2`: `RLE`
+> `RLE`, Relative Log Expression
+* Basic assumption
+  * Create a **virtual reference** sample using geometric mean
+  * Calculate the **size factor** of each sample relative to this reference sample
+* Calculation method
+  * 1. **Create virtual reference**
+    > $N$ = total sample count
+    > $K_{gj}$ = raw count of gene $g$ in sample $j$
+    * Calculate geometric mean for each gene $g$
+
+        $$
+        \mu_{g} = \sqrt[N]{\prod_{j=1}^{N} K_{gj}}
+        $$
+  * 2. **Calculate initial ratio matrix**
+    * Calculate ratio
+
+        $$
+        \text{Ratio}_{gj} = \frac{K_{gj}}{\mu_{g}}
+        $$
+
+    * If $\text{Ratio}_{gj} > 1$, the expression of gene $g$ in sample $j$ is higher than average and *vice versa*
+  * 3. **Calculate size factor for each sample**
+    * **Median** of ratios represents the deviation of sample $j$ from $r$
+
+        $$
+        s_{j} = \text{median}_{g} \text{Ratio}_{gj}
+        $$
+
+    * **Median** is better than **mean** because **mean** is greatly affected by **extreme values**
+  * 4. **Normalize counts with size factors**
+
+    $$
+    \left(\text{Normalized count} \right)_{gj} = \frac{K_{gj}}{s_{j}}
+    $$
 
 ---
 ### T3
