@@ -1,0 +1,13 @@
+Type,Count,Total_Length_bp
+Protein-coding genes,19890,
+Non-coding RNA genes,21872,
+Pseudogenes,16950,
+All genes,59172,
+lncRNA transcripts,30320,68737562
+miRNA transcripts,2875,62187
+misc_RNA transcripts,11863,42289816
+rRNA transcripts,37,104213
+snRNA transcripts,154,19413
+snoRNA transcripts,1194,132662
+tRNA transcripts,431,31882
+mRNA transcripts,131239,577731139
