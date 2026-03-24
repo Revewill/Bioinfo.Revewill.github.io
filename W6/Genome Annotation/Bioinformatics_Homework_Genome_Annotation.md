@@ -90,21 +90,24 @@
           Transcribed from enhancers
       ((Small ncRNA
       < 200 nt))
-        (<b>miRNA</b>
+        (miRNA
         micro, ~ 22 nt)
           Regulates gene expression
-        (<b>siRNA</b>
+        (siRNA
         interfering, ~ 21 nt)
           Mediates RNA interference
         (piRNA
         piwi-interacting, ~ 30 nt)
           Silences transposons in germline cells
-        (<b>snRNA</b>
+        (snRNA
         nuclear, 100 ~ 300 nt)
           Spliceosome
-        (<b>snoRNA</b>
+        (snoRNA
         nucleolar, 60 ~ 300 nt)
           rRNA chemical modifications
+        (tRNA
+        transfer, 70 ~ 90 nt)
+          Protein synthesis
         
         
       3
