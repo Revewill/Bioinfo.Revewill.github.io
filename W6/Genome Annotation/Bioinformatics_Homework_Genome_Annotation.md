@@ -108,12 +108,25 @@
         (tRNA
         transfer, 70 ~ 90 nt)
           Protein synthesis
-        
-        
-      3
-        3.1
-        3.2
-          3.2.1
+        (rRNA
+        ribosomal, 120 ~ 5000 nt)
+          Ribosomes
+        (scaRNA
+        small Cajal body, 60 ~ 300 nt)
+          Modification of snRNAs
+      ((circRNA
+      circular))
+        miRNA sponge or translation template
+      ((Pseudogene))
+        (Processed pseudogene)
+        (Unprocessed pseudogene)
+        (Unitary pseudogene)
+      ((Immune receptor
+      genes))
+        (IG
+        immunoglobulin)
+        (TR
+        T cell receptor)
   ```
   * Last updated on **2025.09**
   * According to **[basic annotation report](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.basic.annotation.gtf.gz)** of genome assembly [**`GRCh38.p14`**](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/)
