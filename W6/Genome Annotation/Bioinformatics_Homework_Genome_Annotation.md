@@ -29,10 +29,10 @@
     * View [script](./Appendix/size/human_genome_plot.R) or [`png` file](./Appendix/size/human_genome_plot.png)
 
 #### 2. The basic composition of human genome
-* For comprehensive classification, please direct to [1.2](#12-other-statistics)
+* For comprehensive classification, please direct to [T1.1.2](#12-other-statistics)
 * Within chromosomal sequences, here is the basic composition
-  > Data collected via `bash` script.
-  > View [`bash` script](./Appendix/size/annotation.sh) or [output `csv` file](./Appendix/size/annotation.csv).
+  > Data collected via `bash` script
+  > View [`bash` script](./Appendix/size/annotation.sh) or [output `csv` file](./Appendix/size/annotation.csv)
 
   ```bash
   $ bash annotation.sh \
@@ -67,7 +67,7 @@
 
   * Data visualized via `R`
 ![visualized](./Appendix/size/genome_annotation_stacked.png)
-    * View [**script**]() or [**`png` file**](./Appendix/size/genome_annotation_stacked.png)
+    * View [**script**](./Appendix/size/genome_annotation_stacked.R) or [**`png` file**](./Appendix/size/genome_annotation_stacked.png)
 
 
 * Last updated on **2025.09**
@@ -138,8 +138,9 @@
         T cell receptor)
   ```
 * Counts of each type/subtype
-  > Data collected via the following command.
-  > For more detailed statistics, view [output `csv` file](./Appendix/ncRNA/ncRNA_counts.csv) here.
+  > Data collected via the following command
+  > For more detailed statistics, view [output `csv` file](./Appendix/ncRNA/ncRNA_counts.csv) here
+  > The count is confined to only ncRNA genes instead of transcripts
 
   ```bash
   $ awk '$3 == "gene" {print $12}' \
@@ -156,12 +157,41 @@
   | pseudogene | 13,374 |
   | immune receptor gene | 338 |
   * Data visualized via `R`
-
+![visualized](./Appendix/ncRNA/RNA_combined_distribution.png)
+    * View [**script**](./Appendix/ncRNA/RNA_combined_distribution.R) or [**`png` file**](./Appendix/ncRNA/RNA_combined_distribution.png)
 
   * Last updated on **2025.09**
   * According to **[basic annotation report](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.basic.annotation.gtf.gz)** of genome assembly [**`GRCh38.p14`**](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/)
-
 #### 2. Annotation on main ncRNAs
-
+* Direct to [T2.1](#1-lastest-classification-of-ncrnas) for more comprehensive annotation
+* Detailed annotation on main ncRNAs
+  * 1. **lncRNA**
+    * Long, > 200 nt
+    * Contains different subtypes and carries out various functions
+      * X chromosome inactivation
+      * Genomic imprinting
+      * Transcriptional regulation
+  * 2. **rRNA**
+    * Ribosomal RNA, core component of ribosome
+    * mRNA decoding, protein synthesis
+  * 3. **tRNA**
+    * Transfer RNA adaptors for protein synthesis
+  * 4. **snRNA**
+    * Small nuclear RNA
+      * U1, U2, U4, U5, U6
+    * Spliceosome components for pre-mRNA splicing
+  * 5. **snoRNA**
+    * Small nucleolar RNA
+    * Guides `2'-O-methylation` and `pseudouridylation` of rRNA and snRNA
+  * 6. **miRNA**
+    * MicroRNA, ~ 22 nt
+    * Post-transcriptional gene silencing
+      * RISC complex
+  * 7. **Immune receptor genes**
+    * **IG**
+      * Immunoglobulin `V(D)J` recombination, generates antibody diversity
+    * **TR**
+      * T-cell receptor diversity, antigen recognition
+  * 8. **Ribozyme**
+    * Catalytic RNA enzymes
 ---
-
