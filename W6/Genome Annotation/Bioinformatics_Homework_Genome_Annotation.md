@@ -121,7 +121,8 @@
         (Processed pseudogene)
         (Unprocessed pseudogene)
         (Unitary pseudogene)
-      ((Immune receptor
+      ((Immune
+      receptor
       genes))
         (IG
         immunoglobulin)
