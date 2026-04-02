@@ -1,0 +1,10 @@
+Call:
+   aov(formula = Sepal.Width ~ Species, data = iris)
+
+Terms:
+                 Species Residuals
+Sum of Squares  11.34493  16.96200
+Deg. of Freedom        2       147
+
+Residual standard error: 0.3396877
+Estimated effects may be unbalanced
