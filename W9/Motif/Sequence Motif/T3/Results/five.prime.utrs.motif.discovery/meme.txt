@@ -1,0 +1,958 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.9 (Release date: Fri Nov 21 15:33:51 2025 -0800)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= sequences/five.prime.utrs.spliced.filtered.fa
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ENSG00000004777.18-ENST0 1.0000    454  ENSG00000070404.9-ENST00 1.0000     59  
+ENSG00000084636.17-ENST0 1.0000    517  ENSG00000100036.12-ENST0 1.0000    799  
+ENSG00000100116.16-ENST0 1.0000     63  ENSG00000102109.8-ENST00 1.0000    101  
+ENSG00000107281.9-ENST00 1.0000    673  ENSG00000107872.12-ENST0 1.0000   1316  
+ENSG00000109736.14-ENST0 1.0000    535  ENSG00000115596.3-ENST00 1.0000    217  
+ENSG00000122386.10-ENST0 1.0000    454  ENSG00000125835.18-ENST0 1.0000    163  
+ENSG00000126267.8-ENST00 1.0000    192  ENSG00000127564.16-ENST0 1.0000    386  
+ENSG00000127774.6-ENST00 1.0000    240  ENSG00000128311.13-ENST0 1.0000    735  
+ENSG00000129911.8-ENST00 1.0000     71  ENSG00000129932.8-ENST00 1.0000    452  
+ENSG00000130429.12-ENST0 1.0000    309  ENSG00000130511.15-ENST0 1.0000    294  
+ENSG00000130589.16-ENST0 1.0000     70  ENSG00000132004.12-ENST0 1.0000     62  
+ENSG00000132881.11-ENST0 1.0000    420  ENSG00000133433.10-ENST0 1.0000     55  
+ENSG00000141744.3-ENST00 1.0000    318  ENSG00000142632.16-ENST0 1.0000    137  
+ENSG00000145911.5-ENST00 1.0000    359  ENSG00000147403.16-ENST0 1.0000    188  
+ENSG00000160932.10-ENST0 1.0000    403  ENSG00000161277.10-ENST0 1.0000    545  
+ENSG00000162076.12-ENST0 1.0000    380  ENSG00000162591.15-ENST0 1.0000    227  
+ENSG00000167476.10-ENST0 1.0000     65  ENSG00000167487.11-ENST0 1.0000     90  
+ENSG00000167550.10-ENST0 1.0000    240  ENSG00000167703.14-ENST0 1.0000     89  
+ENSG00000167779.7-ENST00 1.0000    282  ENSG00000168913.6-ENST00 1.0000    426  
+ENSG00000168936.10-ENST0 1.0000    494  ENSG00000170382.11-ENST0 1.0000   2213  
+ENSG00000173153.13-ENST0 1.0000    234  ENSG00000173581.7-ENST00 1.0000    904  
+ENSG00000174307.6-ENST00 1.0000    398  ENSG00000175274.18-ENST0 1.0000    605  
+ENSG00000175756.13-ENST0 1.0000    401  ENSG00000176108.9-ENST00 1.0000     78  
+ENSG00000176894.9-ENST00 1.0000     65  ENSG00000176973.7-ENST00 1.0000    321  
+ENSG00000177427.12-ENST0 1.0000    211  ENSG00000178093.13-ENST0 1.0000    121  
+ENSG00000179085.7-ENST00 1.0000     77  ENSG00000183172.8-ENST00 1.0000     74  
+ENSG00000183186.7-ENST00 1.0000    205  ENSG00000183798.4-ENST00 1.0000    193  
+ENSG00000183837.9-ENST00 1.0000    336  ENSG00000185085.2-ENST00 1.0000     53  
+ENSG00000185803.8-ENST00 1.0000    583  ENSG00000187634.11-ENST0 1.0000     80  
+ENSG00000187961.13-ENST0 1.0000    107  ENSG00000197858.10-ENST0 1.0000    121  
+ENSG00000197982.13-ENST0 1.0000   1706  ENSG00000214706.10-ENST0 1.0000    498  
+ENSG00000226174.6-ENST00 1.0000     92  ENSG00000234409.6-ENST00 1.0000     79  
+ENSG00000237441.9-ENST00 1.0000    496  ENSG00000247596.8-ENST00 1.0000    244  
+ENSG00000250479.8-ENST00 1.0000    569  ENSG00000254402.6-ENST00 1.0000    118  
+ENSG00000257315.2-ENST00 1.0000   1809  ENSG00000269335.5-ENST00 1.0000    454  
+ENSG00000273983.1-ENST00 1.0000    431  ENSG00000276180.1-ENST00 1.0000    721  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme -dna -minw 6 -maxw 15 -oc five.prime.utrs.motif.discovery -nmotifs 5 sequences/five.prime.utrs.spliced.filtered.fa 
+
+model:  mod=         zoops    nmotifs=         5    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           15
+nsites: minsites=        2    maxsites=       72    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           27477    N=              72
+sample: seed=            0    hsfrac=          0
+        searchsize=  27477    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.178 C 0.314 G 0.332 T 0.176 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.178 C 0.314 G 0.332 T 0.176 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTADMATTTTT MEME-1	width =  11  sites =   8  llr = 108  E-value = 2.6e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTADMATTTTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:8359::::1
+pos.-specific     C  ::::4::::::
+probability       G  :1:5::11:::
+matrix            T  99331199aa9
+
+         bits    2.5         ** 
+                 2.3         ** 
+                 2.0 *    *  ***
+                 1.8 ***  ******
+Relative         1.5 ***  ******
+Entropy          1.3 ***  ******
+(19.4 bits)      1.0 ***  ******
+                 0.8 *** *******
+                 0.5 ***********
+                 0.3 ***********
+                 0.0 -----------
+
+Multilevel           TTAGAATTTTT
+consensus              TAC      
+sequence                T       
+                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTADMATTTTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+ENSG00000257315.2-ENST00   1105  2.02e-08 TAACCTTGTT TTAAAATTTTT TTCTCAAAGC
+ENSG00000276180.1-ENST00    463  5.59e-08 TTCTATAATG TTAACATTTTT GTTATGAGGC
+ENSG00000161277.10-ENST0     86  7.08e-08 AACATACAGG TTTTAATTTTT ACGAGGCTAA
+ENSG00000273983.1-ENST00    355  2.92e-07 ACAAGGCCAA TTAGAATGTTT CTGAGTATAT
+ENSG00000170382.11-ENST0   1301  4.06e-07 TTCTGGAAAC TTATCATTTTA TCTTCCATTT
+ENSG00000197982.13-ENST0    547  9.94e-07 ACTGTGTTTG TTTGCTTTTTT CCCGGGGGCC
+ENSG00000214706.10-ENST0    323  1.12e-06 GCCTCTGGGA TTAGTAGTTTT AGCCTCGTGG
+ENSG00000129932.8-ENST00     71  1.60e-06 GGGAGGTTGG AGAGAATTTTT TCCCATGAAA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTADMATTTTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSG00000257315.2-ENST00            2e-08  1104_[+1]_694
+ENSG00000276180.1-ENST00          5.6e-08  462_[+1]_248
+ENSG00000161277.10-ENST0          7.1e-08  85_[+1]_449
+ENSG00000273983.1-ENST00          2.9e-07  354_[+1]_66
+ENSG00000170382.11-ENST0          4.1e-07  1300_[+1]_902
+ENSG00000197982.13-ENST0          9.9e-07  546_[+1]_1149
+ENSG00000214706.10-ENST0          1.1e-06  322_[+1]_165
+ENSG00000129932.8-ENST00          1.6e-06  70_[+1]_371
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTADMATTTTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTADMATTTTT width=11 seqs=8
+ENSG00000257315.2-ENST00 ( 1105) TTAAAATTTTT  1 
+ENSG00000276180.1-ENST00 (  463) TTAACATTTTT  1 
+ENSG00000161277.10-ENST0 (   86) TTTTAATTTTT  1 
+ENSG00000273983.1-ENST00 (  355) TTAGAATGTTT  1 
+ENSG00000170382.11-ENST0 ( 1301) TTATCATTTTA  1 
+ENSG00000197982.13-ENST0 (  547) TTTGCTTTTTT  1 
+ENSG00000214706.10-ENST0 (  323) TTAGTAGTTTT  1 
+ENSG00000129932.8-ENST00 (   71) AGAGAATTTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTADMATTTTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 26757 bayes= 12.4443 E= 2.6e+002 
+   -51   -965   -965    231 
+  -965   -965   -141    231 
+   208   -965   -965     50 
+    49   -965     59     50 
+   149     26   -965    -50 
+   230   -965   -965    -50 
+  -965   -965   -141    231 
+  -965   -965   -141    231 
+  -965   -965   -965    250 
+  -965   -965   -965    250 
+   -51   -965   -965    231 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTADMATTTTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 8 E= 2.6e+002 
+ 0.125000  0.000000  0.000000  0.875000 
+ 0.000000  0.000000  0.125000  0.875000 
+ 0.750000  0.000000  0.000000  0.250000 
+ 0.250000  0.000000  0.500000  0.250000 
+ 0.500000  0.375000  0.000000  0.125000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.000000  0.000000  0.125000  0.875000 
+ 0.000000  0.000000  0.125000  0.875000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.125000  0.000000  0.000000  0.875000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTADMATTTTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TT[AT][GAT][AC]ATTTTT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  6.45 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AARHGAAAAAWGRAA MEME-2	width =  15  sites =   8  llr = 125  E-value = 1.1e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AARHGAAAAAWGRAA MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  a9441989a851499
+pos.-specific     C  :::3:::::3:::11
+probability       G  ::519131:::86::
+matrix            T  :113::::::51:::
+
+         bits    2.5 *       *      
+                 2.3 *       *      
+                 2.0 **      *      
+                 1.8 **   * **    **
+Relative         1.5 **   ******  **
+Entropy          1.3 **  *******  **
+(22.5 bits)      1.0 **  ******* ***
+                 0.8 *** ***********
+                 0.5 *** ***********
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           AAGAGAAAAAAGGAA
+consensus              AC  G  CT A  
+sequence                T           
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARHGAAAAAWGRAA MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSG00000276180.1-ENST00    496  4.36e-10 GAATCATGTT AAATGAAAAAAGGAA AAACAGCCTA
+ENSG00000100036.12-ENST0    444  4.36e-10 CTGGGGACTG AAGAGAAAAAAGGAA CGAGGATTTC
+ENSG00000257315.2-ENST00    926  4.65e-09 GGGAGGGATC AATCGAAAAATGGAA GTGGTTTAAA
+ENSG00000175274.18-ENST0    259  4.65e-09 ACACAGCAGG AAGAGAGAAATGAAA ACTTACGGTC
+ENSG00000170382.11-ENST0    266  7.66e-08 TATGAGAGTC ATATGAAAAAAGACA TTCAGAGTCT
+ENSG00000197982.13-ENST0    104  1.73e-07 CTGGGGACAC AAGAGAAAACTTGAC TCACAGGCGT
+ENSG00000167779.7-ENST00     48  3.16e-07 TTTGGGAAGT AAACAGAAACTGGAA AGGGAGAGGG
+ENSG00000130511.15-ENST0     71  5.73e-07 GCGCGGAGGA AAGGGAGGAAAAAAA GCCACCCTGC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARHGAAAAAWGRAA MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSG00000276180.1-ENST00          4.4e-10  495_[+2]_211
+ENSG00000100036.12-ENST0          4.4e-10  443_[+2]_341
+ENSG00000257315.2-ENST00          4.6e-09  925_[+2]_869
+ENSG00000175274.18-ENST0          4.6e-09  258_[+2]_332
+ENSG00000170382.11-ENST0          7.7e-08  265_[+2]_1933
+ENSG00000197982.13-ENST0          1.7e-07  103_[+2]_1588
+ENSG00000167779.7-ENST00          3.2e-07  47_[+2]_220
+ENSG00000130511.15-ENST0          5.7e-07  70_[+2]_209
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARHGAAAAAWGRAA MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AARHGAAAAAWGRAA width=15 seqs=8
+ENSG00000276180.1-ENST00 (  496) AAATGAAAAAAGGAA  1 
+ENSG00000100036.12-ENST0 (  444) AAGAGAAAAAAGGAA  1 
+ENSG00000257315.2-ENST00 (  926) AATCGAAAAATGGAA  1 
+ENSG00000175274.18-ENST0 (  259) AAGAGAGAAATGAAA  1 
+ENSG00000170382.11-ENST0 (  266) ATATGAAAAAAGACA  1 
+ENSG00000197982.13-ENST0 (  104) AAGAGAAAACTTGAC  1 
+ENSG00000167779.7-ENST00 (   48) AAACAGAAACTGGAA  1 
+ENSG00000130511.15-ENST0 (   71) AAGGGAGGAAAAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARHGAAAAAWGRAA MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 26469 bayes= 12.4287 E= 1.1e+003 
+   249   -965   -965   -965 
+   230   -965   -965    -50 
+   108   -965     59    -50 
+   108    -33   -141     50 
+   -51   -965    140   -965 
+   230   -965   -141   -965 
+   208   -965    -41   -965 
+   230   -965   -141   -965 
+   249   -965   -965   -965 
+   208    -33   -965   -965 
+   149   -965   -965    150 
+   -51   -965    118    -50 
+   108   -965     91   -965 
+   230   -133   -965   -965 
+   230   -133   -965   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARHGAAAAAWGRAA MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 8 E= 1.1e+003 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.375000  0.000000  0.500000  0.125000 
+ 0.375000  0.250000  0.125000  0.250000 
+ 0.125000  0.000000  0.875000  0.000000 
+ 0.875000  0.000000  0.125000  0.000000 
+ 0.750000  0.000000  0.250000  0.000000 
+ 0.875000  0.000000  0.125000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.750000  0.250000  0.000000  0.000000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.125000  0.000000  0.750000  0.125000 
+ 0.375000  0.000000  0.625000  0.000000 
+ 0.875000  0.125000  0.000000  0.000000 
+ 0.875000  0.125000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARHGAAAAAWGRAA MEME-2 regular expression
+--------------------------------------------------------------------------------
+AA[GA][ACT]GA[AG]AA[AC][AT]G[GA]AA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 13.28 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF BCHSCYGCCKCCKCC MEME-3	width =  15  sites =  45  llr = 397  E-value = 2.0e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif BCHSCYGCCKCCKCC MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::3:::::1::12::
+pos.-specific     C  393493:a8278198
+probability       G  4::6:29::4:131:
+matrix            T  214115::14214:2
+
+         bits    2.5                
+                 2.3                
+                 2.0                
+                 1.8                
+Relative         1.5        *       
+Entropy          1.3  *  * **     **
+(12.7 bits)      1.0  *  * ***    **
+                 0.8  ** ***** ** **
+                 0.5  ** ******** **
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           GCTGCTGCCTCCTCC
+consensus            C CC C   GT G  
+sequence             T A      C     
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCHSCYGCCKCCKCC MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSG00000177427.12-ENST0    163  1.39e-07 GGGCCGTGGT CCCGCTGCCTCCTCC GGTCGTCGTG
+ENSG00000127564.16-ENST0    338  8.50e-07 GGGAGCCCCT GCTCCTGCCTCCCCC GTCCCACCAC
+ENSG00000129911.8-ENST00     23  1.18e-06 GACGGACGCC GCTCCCGCCGCCTCC GCTCCGCCCG
+ENSG00000237441.9-ENST00     79  1.84e-06 GTCAAATTCT GCTCCTGCCTTCCCC CAGGGGCTGG
+ENSG00000173581.7-ENST00    475  2.15e-06 GTTTCCCCCT GCACCTGCCTCTTCC TTAGGCCTGG
+ENSG00000130511.15-ENST0    118  2.49e-06 AGCTGGAGCC GCCGCTGCCGCCGCC GCCGCGGCCG
+ENSG00000004777.18-ENST0    235  2.49e-06 GCCACATTCA GCTCCTGCTGTCTCC AGACCGTGAA
+ENSG00000141744.3-ENST00    219  2.83e-06 GGCTCGGCGG TCAGCTGCCGCCCCC ACAGCGGACC
+ENSG00000183186.7-ENST00     36  3.71e-06 GTCCGACTGC GCTGCCGCCGCCGCC GCCGCCCGCA
+ENSG00000167779.7-ENST00    136  3.71e-06 TTTAGGGAAT GCCCCTGCCCTCTCC CCCACCCCCC
+ENSG00000070404.9-ENST00     36  3.71e-06 GGAAGTCGGT GCCGCTGCCGTCTCT GCGTTCGCC 
+ENSG00000130429.12-ENST0    276  4.79e-06 TTCCAGTGAT TCTCCTGCCTCAGCC TCTCAGGAGC
+ENSG00000250479.8-ENST00    526  5.42e-06 CGACAGCACC GCTGCCGCCGTCTCT AAGGTCGCCC
+ENSG00000170382.11-ENST0   1030  5.42e-06 GCTTCTTAAC TCCACTGCCTCCTCC TGGGCAACAC
+ENSG00000084636.17-ENST0    424  5.42e-06 GAACCTGGGC TCTGCTTCCTCCGCC TGCTGCCTGG
+ENSG00000185803.8-ENST00    398  6.17e-06 TCCACTCGCT CCTTCGGCCTCCTCC CCTGGGGCCG
+ENSG00000126267.8-ENST00     21  6.96e-06 TTGAATGACT TCAGTGGCCTCCTCC TGGGAGGGAG
+ENSG00000122386.10-ENST0     87  8.75e-06 CGCAGGTGCC CCCTCTGCCTCCACC CCGGTGAGAA
+ENSG00000183837.9-ENST00    153  1.23e-05 CCCGTCCGCC GCCGCCGCCGCCGCC GCGCATAGCC
+ENSG00000168936.10-ENST0    432  1.36e-05 GGGACTGGGC GCTGCGGCCTCGTCC GCGCGCCGGG
+ENSG00000178093.13-ENST0     83  1.69e-05 CCCCCCGACA GCAGCCGCCTCCTGC CCCCCGTGCG
+ENSG00000168913.6-ENST00    166  1.88e-05 TGGTCTCCCA CCTCCCGCCGCCCCC CGCCCGCAGG
+ENSG00000160932.10-ENST0    175  1.88e-05 AACTCCAGAC GCTCCTGGCTCCTCT ACGTGGGCCG
+ENSG00000107872.12-ENST0      8  1.88e-05    TGTCCTC CCAGCTACCCCCTCC CTAAGCAGGC
+ENSG00000115596.3-ENST00     75  2.52e-05 CGGGATGGGC CCCCCCGCCGCCGCC GGATCCCTCG
+ENSG00000257315.2-ENST00    154  3.05e-05 GAGGGGAGTG GCAGCGGCCTCCCCT CGCCCCTGGG
+ENSG00000175756.13-ENST0    379  4.80e-05 TCCCCTGGGA CCTGTGGCCGCCGCC CACAGACC  
+ENSG00000187961.13-ENST0     39  5.24e-05 GCCGAGCAGC CCTCCGGCAGTCTCC GCGTCCGTTA
+ENSG00000100036.12-ENST0    773  5.24e-05 GGGGAGCCCG CCTCCTGCCCTAGCC TCACTGGTGC
+ENSG00000167476.10-ENST0     51  5.71e-05 CCTGGGACCT GCTGCTGCTCCAGCC           
+ENSG00000269335.5-ENST00    395  6.20e-05 GCGTTCACAG TCCGCCGCTCCCACC CTTCTCACGT
+ENSG00000197982.13-ENST0   1531  8.58e-05 TGACCGTCTG TCTCTCGCTCTCTCC CGGGCAGGGA
+ENSG00000176973.7-ENST00     77  8.58e-05 GAGTGGATGT CCCGTTGCCTTTTCT CAGCTTTGCG
+ENSG00000133433.10-ENST0     41  8.58e-05 CCCCGCTGTC CTTGCCGCCCCCGCC           
+ENSG00000145911.5-ENST00    332  1.00e-04 CCACCATGAA GCAGCTGCCTGTACC CTGTTGAAAC
+ENSG00000247596.8-ENST00    148  1.08e-04 GTCGACAGCC TCCGCCACATCCTCC ACCTCTCTTG
+ENSG00000107281.9-ENST00     96  1.08e-04 CTGCTGGGGT TCCCCTGGCTCCACT GGCTTGCTGT
+ENSG00000214706.10-ENST0    287  1.17e-04 TCGTCGGCTG CTAGCCGCCGTCGCC TGCGCGCTCA
+ENSG00000167550.10-ENST0    154  1.45e-04 CTTTCCTGCA CCAGCTGCCGCGCCT GCTCACACCC
+ENSG00000161277.10-ENST0    128  1.68e-04 CCTCACCTCG GTTTTTGCCGCCACC TAGAGGAACT
+ENSG00000162591.15-ENST0     87  1.79e-04 GGGACGCTCC GCACCTGCAGCGACC TTGGGCTCCG
+ENSG00000175274.18-ENST0    527  1.92e-04 CGACAGGTAC TCAGCTTCTTTCTGC ATCTCAGTTG
+ENSG00000226174.6-ENST00     19  2.35e-04 GCGGTGTACT CCAGCGGCCCCCTGT GGCCTCTCCA
+ENSG00000254402.6-ENST00      8  5.10e-04    CTGCTCG GGCCCGGCCGCCACC TGCACGGCGG
+ENSG00000185085.2-ENST00     16  5.10e-04 CCGCCTGCGC TCCGCCGCTCGCGCC TCGGGCTCGG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCHSCYGCCKCCKCC MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSG00000177427.12-ENST0          1.4e-07  162_[+3]_34
+ENSG00000127564.16-ENST0          8.5e-07  337_[+3]_34
+ENSG00000129911.8-ENST00          1.2e-06  22_[+3]_34
+ENSG00000237441.9-ENST00          1.8e-06  78_[+3]_403
+ENSG00000173581.7-ENST00          2.2e-06  474_[+3]_415
+ENSG00000130511.15-ENST0          2.5e-06  117_[+3]_162
+ENSG00000004777.18-ENST0          2.5e-06  234_[+3]_205
+ENSG00000141744.3-ENST00          2.8e-06  218_[+3]_85
+ENSG00000183186.7-ENST00          3.7e-06  35_[+3]_155
+ENSG00000167779.7-ENST00          3.7e-06  135_[+3]_132
+ENSG00000070404.9-ENST00          3.7e-06  35_[+3]_9
+ENSG00000130429.12-ENST0          4.8e-06  275_[+3]_19
+ENSG00000250479.8-ENST00          5.4e-06  525_[+3]_29
+ENSG00000170382.11-ENST0          5.4e-06  1029_[+3]_1169
+ENSG00000084636.17-ENST0          5.4e-06  423_[+3]_79
+ENSG00000185803.8-ENST00          6.2e-06  397_[+3]_171
+ENSG00000126267.8-ENST00            7e-06  20_[+3]_157
+ENSG00000122386.10-ENST0          8.8e-06  86_[+3]_353
+ENSG00000183837.9-ENST00          1.2e-05  152_[+3]_169
+ENSG00000168936.10-ENST0          1.4e-05  431_[+3]_48
+ENSG00000178093.13-ENST0          1.7e-05  82_[+3]_24
+ENSG00000168913.6-ENST00          1.9e-05  165_[+3]_246
+ENSG00000160932.10-ENST0          1.9e-05  174_[+3]_214
+ENSG00000107872.12-ENST0          1.9e-05  7_[+3]_1294
+ENSG00000115596.3-ENST00          2.5e-05  74_[+3]_128
+ENSG00000257315.2-ENST00          3.1e-05  153_[+3]_1641
+ENSG00000175756.13-ENST0          4.8e-05  378_[+3]_8
+ENSG00000187961.13-ENST0          5.2e-05  38_[+3]_54
+ENSG00000100036.12-ENST0          5.2e-05  772_[+3]_12
+ENSG00000167476.10-ENST0          5.7e-05  50_[+3]
+ENSG00000269335.5-ENST00          6.2e-05  394_[+3]_45
+ENSG00000197982.13-ENST0          8.6e-05  1530_[+3]_161
+ENSG00000176973.7-ENST00          8.6e-05  76_[+3]_230
+ENSG00000133433.10-ENST0          8.6e-05  40_[+3]
+ENSG00000145911.5-ENST00           0.0001  331_[+3]_13
+ENSG00000247596.8-ENST00          0.00011  147_[+3]_82
+ENSG00000107281.9-ENST00          0.00011  95_[+3]_563
+ENSG00000214706.10-ENST0          0.00012  286_[+3]_197
+ENSG00000167550.10-ENST0          0.00015  153_[+3]_72
+ENSG00000161277.10-ENST0          0.00017  127_[+3]_403
+ENSG00000162591.15-ENST0          0.00018  86_[+3]_126
+ENSG00000175274.18-ENST0          0.00019  526_[+3]_64
+ENSG00000226174.6-ENST00          0.00023  18_[+3]_59
+ENSG00000254402.6-ENST00          0.00051  7_[+3]_96
+ENSG00000185085.2-ENST00          0.00051  15_[+3]_23
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCHSCYGCCKCCKCC MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF BCHSCYGCCKCCKCC width=15 seqs=45
+ENSG00000177427.12-ENST0 (  163) CCCGCTGCCTCCTCC  1 
+ENSG00000127564.16-ENST0 (  338) GCTCCTGCCTCCCCC  1 
+ENSG00000129911.8-ENST00 (   23) GCTCCCGCCGCCTCC  1 
+ENSG00000237441.9-ENST00 (   79) GCTCCTGCCTTCCCC  1 
+ENSG00000173581.7-ENST00 (  475) GCACCTGCCTCTTCC  1 
+ENSG00000130511.15-ENST0 (  118) GCCGCTGCCGCCGCC  1 
+ENSG00000004777.18-ENST0 (  235) GCTCCTGCTGTCTCC  1 
+ENSG00000141744.3-ENST00 (  219) TCAGCTGCCGCCCCC  1 
+ENSG00000183186.7-ENST00 (   36) GCTGCCGCCGCCGCC  1 
+ENSG00000167779.7-ENST00 (  136) GCCCCTGCCCTCTCC  1 
+ENSG00000070404.9-ENST00 (   36) GCCGCTGCCGTCTCT  1 
+ENSG00000130429.12-ENST0 (  276) TCTCCTGCCTCAGCC  1 
+ENSG00000250479.8-ENST00 (  526) GCTGCCGCCGTCTCT  1 
+ENSG00000170382.11-ENST0 ( 1030) TCCACTGCCTCCTCC  1 
+ENSG00000084636.17-ENST0 (  424) TCTGCTTCCTCCGCC  1 
+ENSG00000185803.8-ENST00 (  398) CCTTCGGCCTCCTCC  1 
+ENSG00000126267.8-ENST00 (   21) TCAGTGGCCTCCTCC  1 
+ENSG00000122386.10-ENST0 (   87) CCCTCTGCCTCCACC  1 
+ENSG00000183837.9-ENST00 (  153) GCCGCCGCCGCCGCC  1 
+ENSG00000168936.10-ENST0 (  432) GCTGCGGCCTCGTCC  1 
+ENSG00000178093.13-ENST0 (   83) GCAGCCGCCTCCTGC  1 
+ENSG00000168913.6-ENST00 (  166) CCTCCCGCCGCCCCC  1 
+ENSG00000160932.10-ENST0 (  175) GCTCCTGGCTCCTCT  1 
+ENSG00000107872.12-ENST0 (    8) CCAGCTACCCCCTCC  1 
+ENSG00000115596.3-ENST00 (   75) CCCCCCGCCGCCGCC  1 
+ENSG00000257315.2-ENST00 (  154) GCAGCGGCCTCCCCT  1 
+ENSG00000175756.13-ENST0 (  379) CCTGTGGCCGCCGCC  1 
+ENSG00000187961.13-ENST0 (   39) CCTCCGGCAGTCTCC  1 
+ENSG00000100036.12-ENST0 (  773) CCTCCTGCCCTAGCC  1 
+ENSG00000167476.10-ENST0 (   51) GCTGCTGCTCCAGCC  1 
+ENSG00000269335.5-ENST00 (  395) TCCGCCGCTCCCACC  1 
+ENSG00000197982.13-ENST0 ( 1531) TCTCTCGCTCTCTCC  1 
+ENSG00000176973.7-ENST00 (   77) CCCGTTGCCTTTTCT  1 
+ENSG00000133433.10-ENST0 (   41) CTTGCCGCCCCCGCC  1 
+ENSG00000145911.5-ENST00 (  332) GCAGCTGCCTGTACC  1 
+ENSG00000247596.8-ENST00 (  148) TCCGCCACATCCTCC  1 
+ENSG00000107281.9-ENST00 (   96) TCCCCTGGCTCCACT  1 
+ENSG00000214706.10-ENST0 (  287) CTAGCCGCCGTCGCC  1 
+ENSG00000167550.10-ENST0 (  154) CCAGCTGCCGCGCCT  1 
+ENSG00000161277.10-ENST0 (  128) GTTTTTGCCGCCACC  1 
+ENSG00000162591.15-ENST0 (   87) GCACCTGCAGCGACC  1 
+ENSG00000175274.18-ENST0 (  527) TCAGCTTCTTTCTGC  1 
+ENSG00000226174.6-ENST00 (   19) CCAGCGGCCCCCTGT  1 
+ENSG00000254402.6-ENST00 (    8) GGCCCGGCCGCCACC  1 
+ENSG00000185085.2-ENST00 (   16) TCCGCCGCTCGCGCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCHSCYGCCKCCKCC MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 26469 bayes= 9.57743 E= 2.0e+003 
+ -1214     -1     42     47 
+ -1214    154   -390   -140 
+    59     -1  -1214    126 
+  -300     18     74   -140 
+ -1214    150  -1214    -67 
+ -1214    -12    -90    160 
+  -200  -1214    146   -199 
+ -1214    160   -290  -1214 
+  -141    135  -1214    -40 
+ -1214    -65     19    126 
+ -1214    118   -290     47 
+  -141    135   -231   -140 
+   -19   -124    -31    133 
+ -1214    157   -231  -1214 
+ -1214    139  -1214      1 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCHSCYGCCKCCKCC MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 45 E= 2.0e+003 
+ 0.000000  0.311111  0.444444  0.244444 
+ 0.000000  0.911111  0.022222  0.066667 
+ 0.266667  0.311111  0.000000  0.422222 
+ 0.022222  0.355556  0.555556  0.066667 
+ 0.000000  0.888889  0.000000  0.111111 
+ 0.000000  0.288889  0.177778  0.533333 
+ 0.044444  0.000000  0.911111  0.044444 
+ 0.000000  0.955556  0.044444  0.000000 
+ 0.066667  0.800000  0.000000  0.133333 
+ 0.000000  0.200000  0.377778  0.422222 
+ 0.000000  0.711111  0.044444  0.244444 
+ 0.066667  0.800000  0.066667  0.066667 
+ 0.155556  0.133333  0.266667  0.444444 
+ 0.000000  0.933333  0.066667  0.000000 
+ 0.000000  0.822222  0.000000  0.177778 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCHSCYGCCKCCKCC MEME-3 regular expression
+--------------------------------------------------------------------------------
+[GCT]C[TCA][GC]C[TC]GCC[TGC][CT]C[TG]CC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 20.26 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGATTCATMCAATCA MEME-4	width =  15  sites =   2  llr = 45  E-value = 2.5e+004
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGATTCATMCAATCA MEME-4 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a:::a:5:aa::a
+pos.-specific     C  :::::a::5a:::a:
+probability       G  :a:::::::::::::
+matrix            T  a::aa::a::::a::
+
+         bits    2.5 * *** **  *** *
+                 2.3 * *** **  *** *
+                 2.0 * *** **  *** *
+                 1.8 * ****** ******
+Relative         1.5 ******** ******
+Entropy          1.3 ******** ******
+(32.7 bits)      1.0 ***************
+                 0.8 ***************
+                 0.5 ***************
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           TGATTCATACAATCA
+consensus                    C      
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGATTCATMCAATCA MEME-4 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSG00000170382.11-ENST0    609  5.52e-11 TCACAGAGAT TGATTCATACAATCA ACACACACTG
+ENSG00000273983.1-ENST00    253  1.53e-10 AAAAATGAAG TGATTCATCCAATCA GATTTTCCAG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGATTCATMCAATCA MEME-4 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSG00000170382.11-ENST0          5.5e-11  608_[+4]_1590
+ENSG00000273983.1-ENST00          1.5e-10  252_[+4]_164
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGATTCATMCAATCA MEME-4 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGATTCATMCAATCA width=15 seqs=2
+ENSG00000170382.11-ENST0 (  609) TGATTCATACAATCA  1 
+ENSG00000273983.1-ENST00 (  253) TGATTCATCCAATCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGATTCATMCAATCA MEME-4 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 26469 bayes= 13.6919 E= 2.5e+004 
+  -765   -765   -765    250 
+  -765   -765    159   -765 
+   249   -765   -765   -765 
+  -765   -765   -765    250 
+  -765   -765   -765    250 
+  -765    167   -765   -765 
+   249   -765   -765   -765 
+  -765   -765   -765    250 
+   149     67   -765   -765 
+  -765    167   -765   -765 
+   249   -765   -765   -765 
+   249   -765   -765   -765 
+  -765   -765   -765    250 
+  -765    167   -765   -765 
+   249   -765   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGATTCATMCAATCA MEME-4 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 2 E= 2.5e+004 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGATTCATMCAATCA MEME-4 regular expression
+--------------------------------------------------------------------------------
+TGATTCAT[AC]CAATCA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 27.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTTTTVTTTCMDKBW MEME-5	width =  15  sites =   8  llr = 121  E-value = 4.0e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTTTTVTTTCMDKBW MEME-5 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::::3:::143:15
+pos.-specific     C  :1:1:33::66::4:
+probability       G  1:::15:::::353:
+matrix            T  99a99:8aa3:5535
+
+         bits    2.5   *    **      
+                 2.3   *    **      
+                 2.0   *    **      
+                 1.8 *****  **      
+Relative         1.5 ***** ***     *
+Entropy          1.3 ***** ***     *
+(21.8 bits)      1.0 ***** *** * * *
+                 0.8 ***** ******* *
+                 0.5 ***** ******* *
+                 0.3 ************* *
+                 0.0 ---------------
+
+Multilevel           TTTTTGTTTCCTGCA
+consensus                 AC  TAATGT
+sequence                  C     G T 
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTVTTTCMDKBW MEME-5 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSG00000170382.11-ENST0    429  2.34e-09 GTCTGGCCCC TTTTTGTTTCCATCT TTGGTTCTAG
+ENSG00000257315.2-ENST00   1306  2.25e-08 ATGCACTATG TTTTTGTTTAAATGA GATTTCCTGA
+ENSG00000273983.1-ENST00    410  2.48e-08 AGTGGCTGAG TTTTTCTTTCAGGTA GTCTGAG   
+ENSG00000276180.1-ENST00    436  2.79e-08 GATAACATTC TTTTTGCTTTATGTA TCTTCTATAA
+ENSG00000167550.10-ENST0     98  2.79e-08 GCGGCGCTTG TTTTGGTTTCCTTCT AACTTGCCCA
+ENSG00000197982.13-ENST0    498  4.05e-08 CAAGCTCCAC GTTTTATTTTCTTCA AGGCATTCGC
+ENSG00000269335.5-ENST00    282  1.63e-07 GGGGCTTGTG TTTTTACTTCCGGAT CCCACAGCTA
+ENSG00000128311.13-ENST0    685  8.29e-07 CTCACGCCTG TCTCTCTTTCCTGGT TCCCACCCGT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTVTTTCMDKBW MEME-5 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSG00000170382.11-ENST0          2.3e-09  428_[+5]_1770
+ENSG00000257315.2-ENST00          2.2e-08  1305_[+5]_489
+ENSG00000273983.1-ENST00          2.5e-08  409_[+5]_7
+ENSG00000276180.1-ENST00          2.8e-08  435_[+5]_271
+ENSG00000167550.10-ENST0          2.8e-08  97_[+5]_128
+ENSG00000197982.13-ENST0            4e-08  497_[+5]_1194
+ENSG00000269335.5-ENST00          1.6e-07  281_[+5]_158
+ENSG00000128311.13-ENST0          8.3e-07  684_[+5]_36
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTVTTTCMDKBW MEME-5 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTTTTVTTTCMDKBW width=15 seqs=8
+ENSG00000170382.11-ENST0 (  429) TTTTTGTTTCCATCT  1 
+ENSG00000257315.2-ENST00 ( 1306) TTTTTGTTTAAATGA  1 
+ENSG00000273983.1-ENST00 (  410) TTTTTCTTTCAGGTA  1 
+ENSG00000276180.1-ENST00 (  436) TTTTTGCTTTATGTA  1 
+ENSG00000167550.10-ENST0 (   98) TTTTGGTTTCCTTCT  1 
+ENSG00000197982.13-ENST0 (  498) GTTTTATTTTCTTCA  1 
+ENSG00000269335.5-ENST00 (  282) TTTTTACTTCCGGAT  1 
+ENSG00000128311.13-ENST0 (  685) TCTCTCTTTCCTGGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTVTTTCMDKBW MEME-5 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 26469 bayes= 13.0138 E= 4.0e+003 
+  -965   -965   -141    231 
+  -965   -133   -965    231 
+  -965   -965   -965    250 
+  -965   -133   -965    231 
+  -965   -965   -141    231 
+    49    -33     59   -965 
+  -965    -33   -965    209 
+  -965   -965   -965    250 
+  -965   -965   -965    250 
+   -51     99   -965     50 
+   108     99   -965   -965 
+    49   -965    -41    150 
+  -965   -965     59    150 
+   -51     26    -41     50 
+   149   -965   -965    150 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTVTTTCMDKBW MEME-5 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 8 E= 4.0e+003 
+ 0.000000  0.000000  0.125000  0.875000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.000000  0.000000  0.125000  0.875000 
+ 0.250000  0.250000  0.500000  0.000000 
+ 0.000000  0.250000  0.000000  0.750000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.125000  0.625000  0.000000  0.250000 
+ 0.375000  0.625000  0.000000  0.000000 
+ 0.250000  0.000000  0.250000  0.500000 
+ 0.000000  0.000000  0.500000  0.500000 
+ 0.125000  0.375000  0.250000  0.250000 
+ 0.500000  0.000000  0.000000  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTVTTTCMDKBW MEME-5 regular expression
+--------------------------------------------------------------------------------
+TTTTT[GAC][TC]TT[CT][CA][TAG][GT][CGT][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 33.83 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSG00000004777.18-ENST0         2.00e-02  234_[+3(2.49e-06)]_205
+ENSG00000070404.9-ENST00         2.22e-02  35_[+3(3.71e-06)]_9
+ENSG00000084636.17-ENST0         1.29e-01  194_[+3(7.94e-05)]_214_\
+    [+3(5.42e-06)]_79
+ENSG00000100036.12-ENST0         4.78e-05  443_[+2(4.36e-10)]_314_\
+    [+3(5.24e-05)]_12
+ENSG00000100116.16-ENST0         9.98e-01  63
+ENSG00000102109.8-ENST00         9.85e-01  101
+ENSG00000107281.9-ENST00         5.87e-01  673
+ENSG00000107872.12-ENST0         2.38e-04  7_[+3(1.88e-05)]_67_[+3(7.94e-05)]_\
+    64_[+5(2.80e-05)]_460_[+2(5.76e-05)]_131_[+1(1.25e-05)]_33_[+4(4.47e-05)]_\
+    468
+ENSG00000109736.14-ENST0         4.77e-01  535
+ENSG00000115596.3-ENST00         2.90e-01  74_[+3(2.52e-05)]_128
+ENSG00000122386.10-ENST0         1.23e-03  86_[+3(8.75e-06)]_353
+ENSG00000125835.18-ENST0         3.67e-01  163
+ENSG00000126267.8-ENST00         4.75e-03  20_[+3(6.96e-06)]_47_[+5(6.11e-05)]_\
+    95
+ENSG00000127564.16-ENST0         6.38e-02  337_[+3(8.50e-07)]_34
+ENSG00000127774.6-ENST00         9.61e-01  240
+ENSG00000128311.13-ENST0         3.14e-02  684_[+5(8.29e-07)]_36
+ENSG00000129911.8-ENST00         3.50e-02  22_[+3(1.18e-06)]_34
+ENSG00000129932.8-ENST00         4.60e-02  70_[+1(1.60e-06)]_371
+ENSG00000130429.12-ENST0         2.62e-03  275_[+3(4.79e-06)]_19
+ENSG00000130511.15-ENST0         3.82e-04  70_[+2(5.73e-07)]_32_[+3(2.49e-06)]_\
+    162
+ENSG00000130589.16-ENST0         9.42e-01  70
+ENSG00000132004.12-ENST0         6.53e-01  62
+ENSG00000132881.11-ENST0         5.24e-01  420
+ENSG00000133433.10-ENST0         2.10e-01  40_[+3(8.58e-05)]
+ENSG00000141744.3-ENST00         4.99e-02  104_[+3(2.52e-05)]_99_\
+    [+3(2.83e-06)]_85
+ENSG00000142632.16-ENST0         9.88e-01  137
+ENSG00000145911.5-ENST00         3.13e-01  359
+ENSG00000147403.16-ENST0         5.13e-01  188
+ENSG00000160932.10-ENST0         9.55e-03  174_[+3(1.88e-05)]_70_\
+    [+2(7.67e-05)]_129
+ENSG00000161277.10-ENST0         3.59e-04  58_[+1(2.55e-05)]_16_[+1(7.08e-08)]_\
+    449
+ENSG00000162076.12-ENST0         5.55e-01  380
+ENSG00000162591.15-ENST0         5.00e-01  227
+ENSG00000167476.10-ENST0         1.68e-01  50_[+3(5.71e-05)]
+ENSG00000167487.11-ENST0         4.08e-01  90
+ENSG00000167550.10-ENST0         1.41e-05  97_[+5(2.79e-08)]_128
+ENSG00000167703.14-ENST0         1.00e+00  89
+ENSG00000167779.7-ENST00         9.44e-05  16_[+2(2.09e-05)]_16_[+2(3.16e-07)]_\
+    73_[+3(3.71e-06)]_132
+ENSG00000168913.6-ENST00         2.59e-01  165_[+3(1.88e-05)]_246
+ENSG00000168936.10-ENST0         1.78e-01  431_[+3(1.36e-05)]_48
+ENSG00000170382.11-ENST0         2.75e-16  265_[+2(7.66e-08)]_148_\
+    [+5(2.34e-09)]_165_[+4(5.52e-11)]_406_[+3(5.42e-06)]_256_[+1(4.06e-07)]_\
+    445_[+2(6.87e-05)]_135_[+4(3.27e-05)]_119_[+2(2.77e-05)]_158
+ENSG00000173153.13-ENST0         7.93e-01  234
+ENSG00000173581.7-ENST00         3.48e-02  474_[+3(2.15e-06)]_99_\
+    [+3(3.67e-05)]_301
+ENSG00000174307.6-ENST00         9.86e-01  398
+ENSG00000175274.18-ENST0         7.19e-06  258_[+2(4.65e-09)]_156_\
+    [+4(1.73e-05)]_161
+ENSG00000175756.13-ENST0         4.10e-01  378_[+3(4.80e-05)]_8
+ENSG00000176108.9-ENST00         9.88e-01  78
+ENSG00000176894.9-ENST00         9.94e-01  65
+ENSG00000176973.7-ENST00         7.62e-02  76_[+3(8.58e-05)]_230
+ENSG00000177427.12-ENST0         1.75e-03  162_[+3(1.39e-07)]_34
+ENSG00000178093.13-ENST0         1.93e-01  82_[+3(1.69e-05)]_24
+ENSG00000179085.7-ENST00         2.61e-01  77
+ENSG00000183172.8-ENST00         9.66e-01  74
+ENSG00000183186.7-ENST00         7.19e-02  35_[+3(3.71e-06)]_15_[+3(4.40e-05)]_\
+    125
+ENSG00000183798.4-ENST00         1.00e+00  193
+ENSG00000183837.9-ENST00         1.38e-01  146_[+3(1.11e-05)]_175
+ENSG00000185085.2-ENST00         6.19e-01  53
+ENSG00000185803.8-ENST00         1.74e-02  33_[+3(8.58e-05)]_349_\
+    [+3(6.17e-06)]_109_[+2(2.33e-05)]_47
+ENSG00000187634.11-ENST0         9.47e-01  80
+ENSG00000187961.13-ENST0         8.47e-02  38_[+3(5.24e-05)]_54
+ENSG00000197858.10-ENST0         9.06e-01  121
+ENSG00000197982.13-ENST0         2.57e-08  103_[+2(1.73e-07)]_379_\
+    [+5(4.05e-08)]_34_[+1(9.94e-07)]_973_[+3(8.58e-05)]_161
+ENSG00000214706.10-ENST0         1.07e-02  322_[+1(1.12e-06)]_165
+ENSG00000226174.6-ENST00         1.23e-01  92
+ENSG00000234409.6-ENST00         8.49e-01  79
+ENSG00000237441.9-ENST00         4.05e-05  78_[+3(1.84e-06)]_385_\
+    [+4(8.95e-06)]_3
+ENSG00000247596.8-ENST00         6.79e-01  244
+ENSG00000250479.8-ENST00         1.20e-01  525_[+3(5.42e-06)]_29
+ENSG00000254402.6-ENST00         6.53e-01  118
+ENSG00000257315.2-ENST00         6.42e-12  68_[+5(9.43e-06)]_14_[+5(1.55e-05)]_\
+    41_[+3(3.05e-05)]_284_[+2(2.46e-07)]_51_[+4(6.54e-05)]_392_[+2(4.65e-09)]_\
+    16_[+1(5.39e-05)]_67_[+2(1.75e-05)]_9_[+4(7.69e-05)]_31_[+1(2.02e-08)]_5_\
+    [+1(3.44e-05)]_17_[+1(8.99e-05)]_80_[+1(3.65e-05)]_55_[+5(2.25e-08)]_69_\
+    [+1(6.94e-05)]_143_[+2(4.41e-05)]_189_[+5(1.55e-05)]_28_[+2(7.89e-05)]_4
+ENSG00000269335.5-ENST00         5.15e-04  281_[+5(1.63e-07)]_98_\
+    [+3(6.20e-05)]_45
+ENSG00000273983.1-ENST00         4.55e-13  184_[+1(2.30e-05)]_57_\
+    [+4(1.53e-10)]_87_[+1(2.92e-07)]_44_[+5(2.48e-08)]_7
+ENSG00000276180.1-ENST00         1.35e-12  105_[+2(6.11e-05)]_16_\
+    [+4(8.74e-05)]_92_[+2(1.13e-05)]_23_[+1(4.03e-05)]_61_[+2(4.89e-06)]_32_\
+    [+2(4.42e-07)]_20_[+5(2.79e-08)]_12_[+1(5.59e-08)]_22_[+2(4.36e-10)]_211
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (5) found.
+********************************************************************************
+
+CPU: a8c314217d9d
+
+********************************************************************************
