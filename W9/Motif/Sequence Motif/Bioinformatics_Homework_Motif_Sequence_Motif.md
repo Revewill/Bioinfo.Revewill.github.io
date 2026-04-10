@@ -4,12 +4,41 @@
 > Direct to [T1](#t1), [T2](#t2), [T3](#t3), [T4](#t4) quickly here.
 ---
 ### T1
->
+> Function `promoters` in package `GenomicFeatures` explained
 
+> Reference: `GenomicFeatures` manual ([online](https://bioconductor.org/packages/release/bioc/manuals/GenomicFeatures/man/GenomicFeatures.pdf) and [local](./T1/GenomicFeatures.pdf))
+* Basic Grammar of `promoters` function
+
+    ```R
+    promoters(txdb.object, upstream = <num>, downstream = <num>, use.names = TRUE, ...)
+    ```
+* How `promoters` define genomic regions corresponding to promoters by default
+  * Find a Transcription Start Site (TSS) in `txdb`
+    * The border of transcripts
+  * Promoter genomic region is
+    * For `+` strands, from `TSS - <upstream>` to `TSS + <downstream>`
+    * For `-` strands, from `TSS - <downstream>` to `TSS - <upstream>`
+  * Default arguments: `<upstream> = 2000 bp`, `<downstream> = 200 bp`
 ---
 ### T2
-> 
+> Argument `-mod` in `meme` command
 
+> Reference: [**Meme** webpage](https://meme-suite.org/meme/doc/meme.html)
+* Argument `-mod`
+  * Describes the distribution of motif sites per sequence
+* Values `oops`, `zoops` and `anr` (default: `zoops`)
+  * In short, if any sequence in the dataset contains $n$ motif sites, then
+    * `-mod oops`: $n = 1$
+    * `-mod zoops`: $n \in \{0,1\}$
+    * `-mod anr`: $n \in \mathbb{N}$
+  * Comparison
+    > Sensitivity means sensitivity to weak motifs
+
+    | Value | Name | Properties |
+    | :--- | :--- |:--- |
+    | `oops` | One Occurrence Per Sequence | Fastest, most sensitive, most inaccurate |
+    | `zoops` | Zero or One Occurrence Per Sequence | Slower, less sensitive, more accurate |
+    | `anr` | Any Number of Repetitions | Slowest, most insensitive, most accurate |
 ---
 ### T3
 > 5'-UTRs motif discovery and motif enrichment analysis
