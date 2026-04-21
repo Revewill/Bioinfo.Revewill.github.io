@@ -1,10 +1,3 @@
-# Co-expression Network
-> An answer `md` file for Bioinformatics_Homework_RNA_Network_Co-expression_Network
-
----
-* Downloaded input data from Tsinghua Cloud
-* Created [`R` script](./Script/Network.R) for analysis
-```R
 # Prep
 library(WGCNA)
 setwd("/root/RNA.network")
@@ -74,7 +67,3 @@ plotDendroAndColors(net$dendrograms[[1]],
     addGuide = TRUE, guideHang = 0.05)
 
 dev.off()
-```
-
-* Check figures for [network topology](./Figures/homewk_soft_thresholding.pdf) and [the dendrogram with module colors underneath](./Figures/homewk_module_visualization.pdf)
----
