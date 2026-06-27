@@ -1,0 +1,672 @@
+nohup: ignoring input
+
+Start path:
+/Files/PART_V/Assignment-1 exSEEK
+
+Output:
+/home/data/public/Assignment-1
+
+Skip: /home/data/public/Assignment-1/count matrix/long RNA-seq/count.matrix.long.txt
+Skip: /home/data/public/Assignment-1/count matrix/long RNA-seq/metadata.long.txt
+Skip: /home/data/public/Assignment-1/count matrix/small RNA-seq/count.matrix.short.txt
+Skip: /home/data/public/Assignment-1/count matrix/small RNA-seq/metadata.short.txt
+Skip: /home/data/public/Assignment-1/count matrix/Readme.md
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2124325.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2211756.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2276341.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2277930.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2280766.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2327118.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2334660.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2358281.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2362297.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2372270.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2382513.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2383018.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2383387.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2383420.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2383555.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2383730.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384076.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384108.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384226.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384272.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384377.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384422.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384541.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384548.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2384796.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2386412.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2386612.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2387327.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2387768.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2388859.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2388932.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2389212.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2389216.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2389315.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2389419.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2389477.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2390502.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2390716.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2390804.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2391097.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2391358.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2392154.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2392181.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2392315.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2393807.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2393856.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2396217.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2396425.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2396837.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2397180.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2397621.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2398897.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2405108.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2405110.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2406345.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2406395.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2406552.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2406569.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2406676.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2407821.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2408137.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2408162.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2408206.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2408346.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2408549.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2408784.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2409038.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2409228.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2409545.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2410759.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2410966.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2411160.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2411260.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2411548.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2411883.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2411896.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2412048.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2412064.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2412066.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2412167.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2412287.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2412290.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2412788.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2416785.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2418060.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2418277.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2418488.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2418503.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-2418658.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/CRC-9299429.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_KZ-17.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2412110.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2412347.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2412565.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2412866.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2414413.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2414433.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2414466.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2414682.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2414854.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2415457.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2415469.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2415974.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2418551.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_PKU-2418615.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_TJHH-569608.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_TJHH-569799.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_UnionH-1620241.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_UnionH-1626151.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_UnionH-1628973.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_UnionH-1629817.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_XieH-1630667.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/ESCA_XieH-1630872.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/HCC-ChQ10.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/HCC-ShHW-223960.tar.xz
+Skip: /home/data/public/Assignment-1/exRNA-long/bam/HCC-ShHW-224900.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC-ShHW-224934.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC-ShHW-224995.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC-ShHW-225464.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC-ShHW-225484.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC-ShHW-351556.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ChQ-33630257.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ChQ-7000014337.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ChQ-8002011290.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ChQ-8002020781.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ChQ-91244930.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-214851.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216070.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216159.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216176.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216180.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216222.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216224.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216260.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216265.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216276.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216287.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216288.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216290.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216306.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216310.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216314.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216328.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216336.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216368.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216372.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216383.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216386.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216387.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216390.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216393.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216398.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216435.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216447.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216450.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216469.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216517.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216540.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216565.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216652.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216692.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216730.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216733.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShH-216749.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShHW-161444.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShHW-224990.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShHW-225048.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShHW-225050.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShHW-225181.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/HCC_ShHW-225315.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2238350.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2359535.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2359570.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2378877.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2379000.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2379197.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2379223.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2379275.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2380731.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2380982.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2381001.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2381036.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2381280.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2381602.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2381787.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2382152.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2382186.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2382392.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2382462.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2383484.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2383900.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2384213.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2384220.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2384340.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2384356.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2384360.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2386025.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2386185.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2386375.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2386387.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2387760.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2388850.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2391958.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/LUAD-2394433.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-10.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-11.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-26.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-35.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-36.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-51.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-52.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-58.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-65.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-70.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ChQ-71.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_HaiB-2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_HaiB-3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-0671826.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2359973.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2391923.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2392860.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2392931.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2392932.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2392993.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2393221.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2394780.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2397512.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2397878.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2398934.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2399728.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2408556.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2416741.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2416830.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2416938.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2416997.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-2418111.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-27.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-28.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-29.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-30.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-31.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-32.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-33.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-34.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-35.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-36.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-37.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-38.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-39.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-40.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-41.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-42.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-43.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-44.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-45.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-48.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-50.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-51.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-56.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-58.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-64.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-65.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-66.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-69.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-71.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-78.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-81.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-8111237.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-82.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_PKU-83.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-1.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-14.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-15.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-16.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-17.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-19.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-1903250135.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-1903250204.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-1903250374.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-20.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-21.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-22.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-23.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-27.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-28.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-31.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-32.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-33.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-34.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-37.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-38.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-4.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-42.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-43.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-5.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-6.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-7.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/NC_ShH-9.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2048931.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2121836.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2163710.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2219227.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2244628.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2289794.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2341412.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2374161.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2380893.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2381588.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2382676.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2382823.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2383295.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2383652.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2383723.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2384103.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2384513.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2386653.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2386936.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2387639.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2387809.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2388003.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2388092.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2389088.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2389093.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2390003.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2391321.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2391832.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2392576.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2393829.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2393878.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2394558.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2394727.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2396557.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2397437.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2400904.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2402396.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2406523.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2406754.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2407753.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2407781.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2407817.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2408356.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2408664.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2409257.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2410621.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2411043.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2411921.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2412000.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2412035.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2412079.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2412284.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2412938.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2412941.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2414108.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2414120.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2414185.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2414224.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2414426.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2414470.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2414774.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2415291.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2415932.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2416091.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2416249.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2416272.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2416507.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2418352.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2418587.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2418777.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/bam/STAD-2419363.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/intron.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/lncRNA.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/lncRNA.intron.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/mRNA.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/mRNA.intron.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/pseudogene.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/snoRNA.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/snRNA.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/srpRNA.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/tRNA.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/bed/YRNA.bed
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/genome/gff/gencode.v38.annotation.gff3
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/metadata.txt
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-long/notes.md
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S1.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S10.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S11.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S12.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S13.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S14.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S15.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S16.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S17.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S18.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S19.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S20.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S21.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S22.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S23.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S25.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S4.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S5.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S6.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S7.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S8.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_1S9.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S1.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S10.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S11.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S12.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S13.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S14.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S15.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S16.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S17.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S18.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S19.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S20.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S21.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S22.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S23.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S25.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S4.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S5.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S6.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S7.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S8.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_2S9.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S1.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S10.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S11.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S12.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S13.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S14.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S15.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S16.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S17.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S18.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S19.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S20.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S21.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S22.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S23.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S25.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S4.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S5.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S6.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S7.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S8.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_3S9.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S1.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S10.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S11.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S12.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S13.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S14.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S15.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S16.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S17.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S18.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S19.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S20.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S21.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S22.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S23.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S25.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S4.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S5.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S6.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S7.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S8.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_4S9.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N1.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N10.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N11.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N12.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N13.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N14.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N15.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N16.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N17.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N18.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N19.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N20.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N21.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N22.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N23.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N25.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N26.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N27.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N28.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N29.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N30.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N31.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N32.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N33.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N34.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N35.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N36.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N37.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N38.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N39.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N4.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N40.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N41.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N42.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N43.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N44.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N45.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N46.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N47.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N48.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N49.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N5.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N50.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N6.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N7.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N8.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_N9.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_Pan01.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_Pan02.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_Pan03.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_Pan04.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_Pan05.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_Pan06.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC1.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC10.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC11.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC12.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC13.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC14.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC15.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC16.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC17.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC18.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC19.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC2.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC20.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC21.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC22.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC23.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC24.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC25.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC26.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC27.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC28.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC29.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC3.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC30.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC31.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC32.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC33.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC34.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC35.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC36.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC4.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC5.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC6.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC7.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/bam/Sample_PC8.tar.xz
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/lncRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/lncRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/lncRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/lncRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/lncRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/lncRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/miRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/miRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/miRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/miRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/miRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/miRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/mRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/mRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/mRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/mRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/mRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/mRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/piRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/piRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/piRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/piRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/piRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/piRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/rRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/rRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/rRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/rRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/rRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/rRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snoRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snoRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snoRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snoRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snoRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snoRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/snRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/srpRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/srpRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/srpRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/srpRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/srpRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/srpRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/tRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/tRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/tRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/tRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/tRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/tRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/univec.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/univec.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/univec.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/univec.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/univec.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/univec.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/YRNA.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/YRNA.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/YRNA.3.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/YRNA.4.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/YRNA.rev.1.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/bowtie2-index/YRNA.rev.2.bt2
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/lncRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/miRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/mRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/piRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/rRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/snoRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/snRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/srpRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/tRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/univec.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/genome/fasta/YRNA.fa
+Downloading: /Files/PART_V/Assignment-1 exSEEK/exRNA-short/metadata.txt
+Downloading: /Files/PART_V/Assignment-1 exSEEK/README.md
+
+Finished.
